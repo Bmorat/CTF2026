@@ -1,0 +1,8 @@
+
+*.vdi
+
+.venv/
+__pycache__/
+*.pyc
+
+*.vdi

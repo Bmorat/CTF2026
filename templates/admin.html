@@ -1,0 +1,26 @@
+<!-- templates/admin.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Panel T.E.R.O. — Ingreso Exitoso</title>
+  <style>
+    body { margin:0; font-family: system-ui, Segoe UI, Roboto, Arial;
+           background:radial-gradient(circle at 20% 12%, rgba(151,61,51,.28), transparent 28rem), #080809;
+           color:#f4ead8; display:grid; place-items:center; min-height:100vh; }
+    .card { background:#151211; border:1px solid rgba(151,61,51,.62); border-radius:6px; padding:24px; max-width:520px;
+            box-shadow:0 24px 70px rgba(0,0,0,.5); }
+    h1 { margin:0 0 8px; font-size:1.4rem }
+    .flag { margin-top:10px; padding:12px; border-radius:4px; background:#210d0a; color:#f0c36a; font-weight:700 }
+    a { color:#f0c36a; text-decoration:none }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Ingreso simulado ✅</h1>
+    <p>Bienvenido al panel T.E.R.O. Este acceso fue concedido por detección de SQLi.</p>
+    <div class="flag">{{ flag }}</div>
+    <p style="margin-top:14px"><a href="/cpanel">Volver</a></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/static/sstyle.css b/static/sstyle.css
+index 8066c85fab8eced39d05b00c2dc280bd6c9887ff..2ce54e0892e563e0fe2a1f144c5cedf87b94390e 100644
+--- a/static/sstyle.css
++++ b/static/sstyle.css
+@@ -74,55 +74,67 @@ html, body {
+ }
+ 
+ .cards-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1em;
+     justify-content: center;
+ }
+ @keyframes verde-amarillo-rojo {
+     0%, 100% { color: #0f0; }
+     33% { color: #ff0; }
+     66% { color: #f00; }
+ }
+ 
+ .flag-alert {
+     font-weight: bold;
+     animation: verde-amarillo-rojo 0.5s infinite;
+ }
+ 
+ .nota-articulo {
+     max-width: 960px;
+     margin: 0 auto;
+ }
+ 
+ .nota-contenido {
+-    background-color: #111;
++    position: relative;
++    background-color: rgba(17, 17, 17, 0.9);
+     border: 1px solid #0f0;
+     padding: 2em;
+     box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
++    overflow: hidden;
+ }
+ 
+-.banner {
+-    width: 100%;
+-    min-height: 320px;
++.nota-contenido.nota-con-fondo {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+-    border: 1px solid #0f0;
+-    box-shadow: 0 0 25px rgba(0, 255, 0, 0.4);
+-    margin-bottom: 2em;
++    background-blend-mode: multiply;
++}
++
++.nota-contenido.nota-con-fondo::before {
++    content: "";
++    position: absolute;
++    inset: 0;
++    background: rgba(17, 17, 17, 0.55);
++    backdrop-filter: blur(2px);
++    z-index: 0;
++}
++
++.nota-contenido > * {
++    position: relative;
++    z-index: 1;
+ }
+ 
+ .nota-imagen {
+     width: 100%;
+     max-height: 400px;
+     object-fit: cover;
+     border: 1px solid #0f0;
+     box-shadow: 0 0 12px rgba(0, 255, 0, 0.4);
+     margin: 1.5em 0;
+ }
+ 
+ .nota-texto {
+     line-height: 1.6;
+     text-align: justify;
+ }
+ 
+EOF
+)

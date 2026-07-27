@@ -1,0 +1,7 @@
+La contraseña es una variante de "Tierra plana"
+
+No sabemos que letras son mayúsculas o minúsculas.
+Sabemos que la "t" puede ser "7", la "i" puede ser "1", la "e" puede ser "3", las "a" pueden ser "4"
+Sabemos que las palabras pueden estar separadas por " ", ".", "-", "/" o "_"
+
+El hash de la contraseña es: ff1344fdc9f91c22e73c311467ac579bc9bb8cd1badbc1a7af38524f03bea960

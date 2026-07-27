@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Archivo T.E.R.O.{% endblock %}
+
+{% block content %}
+<h1>📡 Expedientes T.E.R.O. 2026</h1>
+<p class="bajada">Tecnología de Espionaje Rural Oriental: los teros no avisan, reportan.</p>
+
+<div class="cards-container">
+    {% for slug, nota in notas.items() %}
+        <a href="{{ url_for('ver_nota', slug=slug) }}" class="card-link">
+            <div class="card">
+                <h3>{{ nota.titulo }}</h3>
+                {% if nota.autor %}
+                <p><em>por {{ nota.autor }}</em></p>
+                {% endif %}
+                {% if nota.imagen %}
+                <img src="{{ nota.imagen }}" alt="Imagen de la nota" class="card-imagen">
+                {% endif %}
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+{% endblock %}

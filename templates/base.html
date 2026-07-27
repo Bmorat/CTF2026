@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}CTF T.E.R.O. 2026{% endblock %}</title>
+    <link rel="stylesheet" href="/static/sstyle.css">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    {% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Acceso T.E.R.O.{% endblock %}
+
+{% block content %}
+<h2>Acceso al Observatorio Rural</h2>
+{% if error %}<p style="color:red;">{{ error }}</p>{% endif %}
+<form method="POST">
+    {% if alert %}<p class="flag-alert">{{ alert }}</p>{% endif %}
+    <label for="usuario">Operador:</label><br>
+    <input type="text" name="usuario" required><br><br>
+    <label for="contrasena">Clave de bandada:</label><br>
+    <input type="password" name="contrasena" required><br><br>
+    <input type="submit" value="Entrar al nodo">
+</form>
+{% endblock %}
