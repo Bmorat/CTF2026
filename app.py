@@ -166,7 +166,71 @@ app_secreta = Flask('app_secreta')
 
 @app_secreta.route('/')
 def secreto():
-    return "<h1>📡 Bienvenido al núcleo del Sistema T.E.R.O.</h1><p>la-bandera-es{oriental}</p>"
+    iluminado = request.cookies.get('iluminado')
+
+    if iluminado != 'True':
+        return "<h2>Acceso no autorizado</h2><p>Esta frecuencia no es para vos, ñery.</p>", 403
+
+    host_sin_puerto = request.host.split(':')[0]
+    url_blog = f"http://{host_sin_puerto}:5000/"
+
+    return f"""
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Núcleo T.E.R.O.</title>
+        <style>
+            body {{
+                margin: 0;
+                height: 100vh;
+                background: radial-gradient(circle, #1e3a8a, #020617);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, sans-serif;
+            }}
+            .card {{
+                background: rgba(15, 23, 42, 0.92);
+                border: 3px solid #38bdf8;
+                border-radius: 20px;
+                padding: 50px;
+                text-align: center;
+                box-shadow: 0 0 35px #38bdf8;
+            }}
+            h1 {{ font-size: 32px; color: #facc15; margin-bottom: 20px; }}
+            .flag {{
+                font-size: 28px;
+                font-weight: bold;
+                color: #22c55e;
+                background: #020617;
+                padding: 20px;
+                border-radius: 12px;
+                border: 2px dashed #22c55e;
+                margin-bottom: 30px;
+            }}
+            a.continuar {{
+                display: inline-block;
+                background: #2563eb;
+                color: white;
+                text-decoration: none;
+                padding: 14px 30px;
+                border-radius: 10px;
+                font-size: 18px;
+            }}
+            a.continuar:hover {{ background: #1d4ed8; }}
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>📡 Núcleo del Sistema T.E.R.O.</h1>
+            <div class="flag">la-bandera-es{{oriental}}</div>
+            <a class="continuar" href="{url_blog}">Continuar →</a>
+        </div>
+    </body>
+    </html>
+    """
 
 def correr_flask_secreta():
     app_secreta.run(host='0.0.0.0', port=7777, debug=False)
