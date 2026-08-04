@@ -81,12 +81,12 @@ def index():
     iluminado = request.cookies.get('iluminado')
 
     if iluminado is None:
-        resp = make_response("<h2>Acceso no autorizado</h2><p>El Sistema T.E.R.O. todavía no validó tu patrón de pisada.</p><p>Si el grito viene de lejos, ya te están triangulando.</p>")
+        resp = make_response(render_template('no_autorizado.html'))
         resp.set_cookie('iluminado', 'False')
         return resp
 
     if iluminado != 'True':
-        return "<h2>Acceso no autorizado</h2><p>El Sistema T.E.R.O. todavía no validó tu patrón de pisada.</p><p>Si el grito viene de lejos, ya te están triangulando.</p>"
+        return render_template('no_autorizado.html')
 
     resp = make_response(render_template('index.html', notas=notas_terraplanistas))
     resp.set_cookie('bandera', 'bienvenido')
