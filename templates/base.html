@@ -94,6 +94,14 @@
             calibrarTamanoInicial();
         });
 
+        window.addEventListener("pageshow", function(e) {
+            activado = false;
+            if (e.persisted) {
+                paginaLista = false;
+                calibrarTamanoInicial();
+            }
+        });
+
         window.addEventListener("resize", function() {
             detectarDevToolsPorTamano();
         }, true);
