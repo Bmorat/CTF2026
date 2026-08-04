@@ -1,6 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+        const URL_YOUTUBE = "https://www.youtube.com/shorts/ALxrbSNFfxQ";
+
+        let activado = false;
+        let baseAncho = 0;
+        let baseAlto = 0;
+        let paginaLista = false;
+        let deteccionesSeguidas = 0;
+
+        function redirigirYoutube() {
+            if (activado) {
+                return;
+            }
+
+            activado = true;
+            window.location.replace(URL_YOUTUBE);
+        }
+
+        function medirDiferencia() {
+            return {
+                ancho: Math.abs(window.outerWidth - window.innerWidth),
+                alto: Math.abs(window.outerHeight - window.innerHeight)
+            };
+        }
+
+        function calibrarTamanoInicial() {
+            const diff = medirDiferencia();
+
+            baseAncho = diff.ancho;
+            baseAlto = diff.alto;
+
+            setTimeout(function() {
+                paginaLista = true;
+            }, 1200);
+        }
+
+        function detectarDevToolsPorTamano() {
+            if (!paginaLista || activado) {
+                return;
+            }
+
+            const diff = medirDiferencia();
+
+            const cambioAncho = Math.abs(diff.ancho - baseAncho);
+            const cambioAlto = Math.abs(diff.alto - baseAlto);
+
+            /*
+                Detecta cambios grandes después de que la página ya cargó.
+                Esto evita que la página redirija solo por cargar.
+            */
+            const UMBRAL_CAMBIO = 220;
+
+            const devtoolsDetectado =
+                cambioAncho > UMBRAL_CAMBIO ||
+                cambioAlto > UMBRAL_CAMBIO;
+
+            if (devtoolsDetectado) {
+                deteccionesSeguidas += 1;
+            } else {
+                deteccionesSeguidas = 0;
+            }
+
+            if (deteccionesSeguidas >= 2) {
+                redirigirYoutube();
+            }
+        }
+
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+            redirigirYoutube();
+        }, true);
+
+        document.addEventListener("keydown", function(e) {
+            const tecla = e.key.toLowerCase();
+
+            if (
+                e.key === "F12" ||
+                (e.ctrlKey && e.shiftKey && tecla === "i") ||
+                (e.ctrlKey && e.shiftKey && tecla === "j") ||
+                (e.ctrlKey && e.shiftKey && tecla === "c") ||
+                (e.ctrlKey && tecla === "u") ||
+                (e.ctrlKey && tecla === "s")
+            ) {
+                e.preventDefault();
+                e.stopPropagation();
+                redirigirYoutube();
+            }
+        }, true);
+
+        window.addEventListener("load", function() {
+            calibrarTamanoInicial();
+        });
+
+        window.addEventListener("resize", function() {
+            detectarDevToolsPorTamano();
+        }, true);
+
+        setInterval(function() {
+            detectarDevToolsPorTamano();
+        }, 700);
+    </script>
     <title>{% block title %}CTF T.E.R.O. 2026{% endblock %}</title>
     <link rel="stylesheet" href="/static/sstyle.css">
 </head>
