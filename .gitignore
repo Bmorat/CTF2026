@@ -4,5 +4,7 @@
 .venv/
 __pycache__/
 *.pyc
+local_flask.out.log
+local_flask.err.log
 
 *.vdi

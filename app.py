@@ -1,95 +1,34 @@
 from flask import Flask, render_template, request, make_response, redirect, url_for
 from threading import Thread
-import os
 import re
-import asyncio
-from telegram import Update
-from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
-import nest_asyncio
-from telegram.ext import CommandHandler
 from logins_flags import obtener_bandera
-nest_asyncio.apply()
-from notas import notas_terraplanistas
+from notas import notas_tero, CATEGORIAS_NOTAS, SLUG_MANIFIESTO, SLUG_RECLUTAMIENTO
 
 # === FLASK APP ===
 app = Flask(__name__)
-PASSWORD = "chaja-cifrado"
-FLAG = "la-bandera-es{tero_detectado}"
-BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-RUTA_IMAGEN = r"C:\Users\liber\Downloads\tero_drone.png"
-
-RESPUESTAS_BOT = {
-    "hellfire": "1D",
-    "maquiavelo": "2E",
-    "tero": "3S",
-    "oriental": "4I",
-    "alien": "5N",
-    "bienvenido": "6F",
-    "sqli_exitoso": "7O",
-    "alerta_rural": "8R",
-    "prim": "9M",
-    "aleph": "10A",
-    "rednex": "11N",
-}
 
 # Credenciales válidas administradas en logins_flags.py
 
-# /start → mensaje + imagen
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    mensaje = (
-        "📡 *Bienvenido al nodo T\\.E\\.R\\.O\\. 2026\\.*\n\n"
-        "🧠 Los teros no son pájaros: son sensores biotecnológicos de vigilancia rural\\.\n"
-        "⚠️ Este canal es solo para observadores fuera del radar del MGAP\\.\n"
-        "Si estás acá, es porque el grito ya te marcó\\.\n\n"
-        "🔐 Ingresá la *contraseña* para acceder\\.\n"
-        "_\\(La señal está en el campo, pero la antena vive en tus ojos\\.\\.\\.\\)_"
-    )
-
-    try:
-        with open(RUTA_IMAGEN, "rb") as imagen:
-            await update.message.reply_document(
-                document=imagen,
-                caption=mensaje,
-                parse_mode="MarkdownV2"
-            )
-    except FileNotFoundError:
-        await update.message.reply_text("⚠️ No se encontró el archivo del tero. Contactá al operador rural, ñery.")
-
-# Lógica del bot
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    mensaje = update.message.text.strip().lower()
-
-    if mensaje in RESPUESTAS_BOT:
-        await update.message.reply_text(RESPUESTAS_BOT[mensaje])
-    elif mensaje == PASSWORD:
-        await update.message.reply_text(f"✅ Contraseña correcta.\n{FLAG}")
-    else:
-        await update.message.reply_text("❌ Esa no es la palabra. El tero sigue gritando.")
-
-async def correr_bot():
-    if not BOT_TOKEN:
-        raise RuntimeError("Falta configurar la variable de entorno TELEGRAM_BOT_TOKEN")
-
-    bot = ApplicationBuilder().token(BOT_TOKEN).build()
-    bot.add_handler(CommandHandler("start", start))
-    bot.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
-    print("📡 Bot activo. Esperando mensajes...")
-    await bot.run_polling()
-
 @app.route('/')
 def index():
-    iluminado = request.cookies.get('iluminado')
+    iluminado = request.cookies.get('Nido')
 
     if iluminado is None:
         resp = make_response(render_template('no_autorizado.html'))
-        resp.set_cookie('iluminado', 'False')
+        resp.set_cookie('Nido', 'False')
         return resp
 
     if iluminado != 'True':
         return render_template('no_autorizado.html')
 
-    resp = make_response(render_template('index.html', notas=notas_terraplanistas))
-    resp.set_cookie('bandera', 'bienvenido')
+    resp = make_response(render_template(
+        'index.html',
+        notas=notas_tero,
+        categorias=CATEGORIAS_NOTAS,
+        slug_manifiesto=SLUG_MANIFIESTO,
+        slug_reclutamiento=SLUG_RECLUTAMIENTO,
+    ))
+    resp.set_cookie('bandera', '{Rey_Julian}')
     return resp
 
 
@@ -102,7 +41,7 @@ def login():
         bandera = obtener_bandera(usuario, contrasena)
         if bandera:
             resp = make_response(render_template('login.html', alert=bandera))
-            resp.set_cookie('iluminado', 'True')
+            resp.set_cookie('Nido', 'True')
             return resp
 
         return render_template('login.html', error='Usuario o contraseña incorrectos')
@@ -122,10 +61,11 @@ def submit():
 
 @app.route('/nota/<slug>')
 def ver_nota(slug):
-    nota = notas_terraplanistas.get(slug)
+    nota = notas_tero.get(slug)
     if nota is None:
         return "<h2>Registro rural no encontrado, ñery.</h2>", 404
-    return render_template('nota.html', **nota)
+    categoria = CATEGORIAS_NOTAS.get(slug, "")
+    return render_template('nota.html', categoria=categoria, **nota)
 
 patrones_sqli = [
     # OR 1=1 (con o sin comillas alrededor de 1, con posible comentario)
@@ -176,6 +116,5 @@ def correr_flask():
     app.run(host='0.0.0.0', port=5000, debug=False)
 
 if __name__ == '__main__':
-    Thread(target=correr_flask).start()           # Puerto 5000
     Thread(target=correr_flask_secreta).start()   # Puerto 7777
-    asyncio.run(correr_bot())
+    correr_flask()                                # Puerto 5000

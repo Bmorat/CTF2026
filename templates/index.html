@@ -3,22 +3,103 @@
 {% block title %}Archivo T.E.R.O.{% endblock %}
 
 {% block content %}
-<h1>📡 Expedientes T.E.R.O. 2026</h1>
-<p class="bajada">Tecnología de Espionaje Rural Oriental.</p>
+<h1>Expedientes T.E.R.O. 2026</h1>
+<p class="bajada">Tecnología de Espionaje Rural Oriental. Archivo de investigación no oficial.</p>
 
+<div class="ticker">
+    <div class="ticker-track">
+        <span class="log-sync">[sync] nido rocha_07 estable</span>
+        <span class="log-warn">[warn] silencio detectado en sector litoral</span>
+        <span class="log-sync">[sync] relay denver respondiendo</span>
+        <span>[info] cobertura rambla_baliza al 94%</span>
+        <span class="log-sync">[sync] nido cerro_montevideo estable</span>
+        <span class="log-warn">[warn] latencia anómala en nodo greenwich</span>
+        <span>[info] 14 expedientes rurales indexados</span>
+        <span class="log-sync">[sync] handshake mate_antena completo</span>
+        <span>[info] 8 expedientes globales indexados</span>
+        <span class="log-warn">[warn] acceso no autorizado descartado</span>
+        <span class="log-sync">[sync] nido area51_bajo estable</span>
+        <span>[info] documento núcleo verificado</span>
+    </div>
+</div>
+
+{% if slug_manifiesto in notas %}
+    {% set doc = notas[slug_manifiesto] %}
+    <section class="manifiesto">
+        <span class="categoria-tag">núcleo</span>
+        <h2>{{ doc.titulo }}</h2>
+        <p><em>{{ doc.subtitulo }}</em></p>
+        <div class="nota-texto">{{ doc.contenido | safe }}</div>
+    </section>
+{% endif %}
+
+{% if slug_reclutamiento in notas %}
+    {% set rec = notas[slug_reclutamiento] %}
+    <section class="reclutamiento">
+        <span class="reclutamiento-ojo">◉</span>
+        <h2 class="reclutamiento-titulo">{{ rec.titulo }}<span class="cursor-blink"></span></h2>
+        <p><em>{{ rec.subtitulo }}</em></p>
+        {% if rec.video %}
+        <video class="nota-imagen" autoplay loop muted playsinline>
+            <source src="{{ rec.video }}" type="video/mp4">
+        </video>
+        {% elif rec.imagen %}
+        <img src="{{ rec.imagen }}" alt="Imagen ilustrativa" class="nota-imagen">
+        {% endif %}
+        <div class="nota-texto">{{ rec.contenido | safe }}</div>
+        <a href="{{ url_for('ver_nota', slug=slug_reclutamiento) }}" class="cmd-link">&gt; ver_expediente --acceso=no-publico</a>
+    </section>
+{% endif %}
+
+<div class="seccion-header">
+    <span class="seccion-comentario">expediente_rural / uruguay</span>
+    <span class="seccion-linea"></span>
+</div>
 <div class="cards-container">
     {% for slug, nota in notas.items() %}
+        {% if slug != slug_manifiesto and slug != slug_reclutamiento and categorias.get(slug) == 'rural' %}
         <a href="{{ url_for('ver_nota', slug=slug) }}" class="card-link">
             <div class="card">
                 <h3>{{ nota.titulo }}</h3>
                 {% if nota.autor %}
                 <p><em>por {{ nota.autor }}</em></p>
                 {% endif %}
-                {% if nota.imagen %}
+                {% if nota.video %}
+                <video class="card-imagen" autoplay loop muted playsinline>
+                    <source src="{{ nota.video }}" type="video/mp4">
+                </video>
+                {% elif nota.imagen %}
                 <img src="{{ nota.imagen }}" alt="Imagen de la nota" class="card-imagen">
                 {% endif %}
             </div>
         </a>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<div class="seccion-header">
+    <span class="seccion-comentario">expediente_global / mundo</span>
+    <span class="seccion-linea"></span>
+</div>
+<div class="cards-container">
+    {% for slug, nota in notas.items() %}
+        {% if slug != slug_manifiesto and slug != slug_reclutamiento and categorias.get(slug) == 'global' %}
+        <a href="{{ url_for('ver_nota', slug=slug) }}" class="card-link">
+            <div class="card">
+                <h3>{{ nota.titulo }}</h3>
+                {% if nota.autor %}
+                <p><em>por {{ nota.autor }}</em></p>
+                {% endif %}
+                {% if nota.video %}
+                <video class="card-imagen" autoplay loop muted playsinline>
+                    <source src="{{ nota.video }}" type="video/mp4">
+                </video>
+                {% elif nota.imagen %}
+                <img src="{{ nota.imagen }}" alt="Imagen de la nota" class="card-imagen">
+                {% endif %}
+            </div>
+        </a>
+        {% endif %}
     {% endfor %}
 </div>
 

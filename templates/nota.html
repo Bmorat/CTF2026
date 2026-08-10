@@ -13,10 +13,20 @@
 
     <div class="nota-contenido{% if fondo %} nota-con-fondo{% endif %}"
          {% if fondo %}style="background-image: url('{{ fondo_url }}');"{% endif %}>
+        {% if categoria %}
+        <span class="categoria-tag">{{ categoria }}</span>
+        {% endif %}
         <h2>{{ titulo }}</h2>
         <p><em>{{ subtitulo }}</em></p>
+        {% if autor %}
+        <p class="marca-recluta">por {{ autor }}</p>
+        {% endif %}
 
-        {% if imagen %}
+        {% if video %}
+        <video class="nota-imagen" autoplay loop muted playsinline>
+            <source src="{{ video }}" type="video/mp4">
+        </video>
+        {% elif imagen %}
         <img src="{{ imagen }}" alt="Imagen ilustrativa" class="nota-imagen">
         {% endif %}
 
