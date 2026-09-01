@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request, make_response, redirect, url_for
+from flask import Flask, render_template, request, make_response, redirect, url_for, Response
 from threading import Thread
+import os
 import re
 from logins_flags import obtener_bandera
 from notas import notas_tero, CATEGORIAS_NOTAS, SLUG_MANIFIESTO, SLUG_RECLUTAMIENTO
@@ -100,6 +101,19 @@ def admin():  # login
 def admin_success():
     # Página fake de panel con la bandera
     return render_template('admin.html', flag='la-bandera-es{sqli_exitoso}')
+
+
+@app.route('/33/grito', methods=['GET'])
+def grito():
+    # Se sirve crudo desde disco a proposito: Jinja2 no debe tocar este JS.
+    # El parametro ?k= lo lee el navegador, el servidor lo ignora.
+    ruta = os.path.join(app.root_path, 'templates', 'grito.html')
+    with open(ruta, 'rb') as f:
+        cuerpo = f.read()
+    resp = Response(cuerpo, mimetype='text/html')
+    resp.headers['Content-Type'] = 'text/html; charset=utf-8'
+    resp.headers['Cache-Control'] = 'no-store'
+    return resp
 
 
 app_secreta = Flask('app_secreta')

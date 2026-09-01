@@ -164,6 +164,8 @@ notas_tero = {
             "<p>El Sistema T.E.R.O. distingue adulto, niño, ciclista, perro y moto por forma, cadencia y ruido de mochila. "
             "Esa precisión no apareció de la nada. Fue alimentada por años de datos cotidianos presentados como inclusión tecnológica.</p>"
             "<p>La vigilancia más eficiente siempre llega envuelta en una causa noble.</p>"
+            "<p>La imagen adjunta es un registro de cámara fija recuperado del propio "
+            "sistema. No la retocamos. Lo que aparece sobre el pizarrón estaba ahí.</p>"
         ),
     },
     "fec-cifrado": {

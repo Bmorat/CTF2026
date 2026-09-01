@@ -8,3 +8,4 @@ local_flask.out.log
 local_flask.err.log
 
 *.vdi
+.DS_Store
