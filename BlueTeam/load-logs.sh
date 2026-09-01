@@ -5,8 +5,8 @@
 # selector de Discover en vez de tener que tocar el rango de fechas a mano.
 set -euo pipefail
 
-OS_URL="${OS_URL:-http://localhost:9200}"
-DASHBOARDS_URL="${DASHBOARDS_URL:-http://localhost:5601}"
+OS_URL="${OS_URL:-http://localhost:9201}"
+DASHBOARDS_URL="${DASHBOARDS_URL:-http://localhost:5602}"
 BULK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/logs-ctf/bulk"
 
 echo "==> Esperando a que OpenSearch este disponible en ${OS_URL} ..."

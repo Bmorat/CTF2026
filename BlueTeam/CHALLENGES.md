@@ -6,7 +6,7 @@ jugador, pegalo tal cual o adaptalo en la descripción del reto de CTFd) de la
 de una misma cadena de intrusión, así que tiene sentido liberarlas como retos
 encadenados dentro de una misma categoría "Blue Team / Threat Hunting".
 
-Acceso al entorno para el jugador: `http://localhost:5601` (o la URL donde
+Acceso al entorno para el jugador: `http://localhost:5602` (o la URL donde
 esté publicado) → *Discover* → elegir el index pattern correspondiente a la
 versión (`CTF v1 - Acceso inicial`, `CTF v2 - Credenciales`, `CTF v3 -
 Exfiltracion`).

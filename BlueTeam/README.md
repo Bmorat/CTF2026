@@ -46,7 +46,7 @@ docker compose up -d
 ```
 
 `load-logs.sh` hace lo siguiente:
-1. Espera a que OpenSearch responda en `http://localhost:9200/_cluster/health`.
+1. Espera a que OpenSearch responda en `http://localhost:9201/_cluster/health`.
 2. Borra el índice combinado viejo `wazuh-alerts-4.x-2025.10.08` si existe
    (de una versión anterior de este setup) para evitar confusión.
 3. Carga cada `logs-ctf/bulk/*.ndjson` en su propio índice vía la API `_bulk`:
@@ -58,7 +58,7 @@ docker compose up -d
    2025-10-08 (la fecha de todo el dataset), así no hace falta expandir el
    time picker a mano al entrar.
 
-Luego abrí **http://localhost:5601**, andá a *Discover* y elegí en el
+Luego abrí **http://localhost:5602**, andá a *Discover* y elegí en el
 selector de arriba a la izquierda la versión que quieras revisar
 ("CTF v1 - Acceso inicial", "CTF v2 - Credenciales" o "CTF v3 -
 Exfiltracion"). Si el nombre amigable no se ve y aparece el nombre técnico
@@ -72,7 +72,7 @@ archivo — ya trae su propio nombre de índice embebido en cada línea de acci�
 
 ```bash
 curl -H "Content-Type: application/x-ndjson" \
-  -X POST http://localhost:9200/_bulk \
+  -X POST http://localhost:9201/_bulk \
   --data-binary @logs-ctf/bulk/logs-v1-acceso-inicial.ndjson
 ```
 
