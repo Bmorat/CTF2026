@@ -168,6 +168,33 @@ notas_tero = {
             "sistema. No la retocamos. Lo que aparece sobre el pizarrón estaba ahí.</p>"
         ),
     },
+    "senal-6925khz": {
+        "titulo": "6.925 kHz: La Estación que Sólo Transmite las Noches de Helada",
+        "subtitulo": "Registro de escucha en onda corta desde Paso de los Toros",
+        "autor": "Dipolo Invertido",
+        "fondo": "",
+        "imagen": "",
+        "contenido": (
+            "<p>Hay un compañero en Paso de los Toros que armó un dipolo con alambre de "
+            "fardo y lo colgó entre dos eucaliptus. No es un profesional. Es un tipo "
+            "que no puede dormir y que hace veinte años escucha onda corta porque a "
+            "las tres de la mañana no hay mucho más para hacer.</p>"
+            "<p>Desde marzo viene registrando actividad en 6.925 kHz. La frecuencia no "
+            "está asignada a nadie: es la banda donde transmiten los piratas, los que "
+            "no piden licencia. Lo raro no es que haya alguien ahí. Lo raro es cuándo.</p>"
+            "<p>Transmite las noches de helada. Sólo esas. Él tiene la planilla: cruzó "
+            "sus registros con los datos de INUMET y de veintitrés noches con emisión, "
+            "veintiuna tuvieron temperatura bajo cero a nivel del suelo. Las otras dos "
+            "fueron noches de niebla cerrada. Y las noches de helada son, casualmente, "
+            "las noches en que los teros se quedan quietos.</p>"
+            "<p>El equipo de guardia archivó la captura del 11 de julio. Esa madrugada "
+            "estaban con otra cosa y el archivo quedó guardado con el nombre que le "
+            "pusieron a las apuradas. No abre. Lo probamos en tres máquinas distintas.</p>"
+            "<p>Lo subimos igual. Alguien con más paciencia que nosotros va a saber qué "
+            "hacer con eso.</p>"
+            "<p><a href=\"/descargas/senal_6925khz.jpg\">senal_6925khz.jpg</a> — 3 KB, captura del 11/07</p>"
+        ),
+    },
     "fec-cifrado": {
         "titulo": "Gbqb Rfcbpvny: Yn Pynir Rfgá Ra Ry Tevgb",
         "subtitulo": "Registro cifrado recuperado de un nido",
@@ -425,6 +452,7 @@ CATEGORIAS_NOTAS = {
     "tortorelli-leche": "rural",
     "chivito-control": "rural",
     "ceibal-semillas": "rural",
+    "senal-6925khz": "rural",
     "fec-cifrado": "rural",
     "operacion-silencio": "rural",
     "tuneles-montevideo": "rural",

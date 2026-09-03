@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, make_response, redirect, url_for, Response
+from flask import Flask, render_template, request, make_response, redirect, url_for, Response, send_file
 from threading import Thread
 import os
 import re
@@ -114,6 +114,19 @@ def grito():
     resp.headers['Content-Type'] = 'text/html; charset=utf-8'
     resp.headers['Cache-Control'] = 'no-store'
     return resp
+
+
+@app.route('/descargas/senal_6925khz.jpg')
+def descarga_senal():
+    # Se fuerza la descarga con octet-stream a proposito: el navegador no debe
+    # intentar renderizar el archivo. Se sirve tal cual esta en disco.
+    ruta = os.path.join(app.root_path, 'static', 'archivos', 'senal_6925khz.jpg')
+    return send_file(
+        ruta,
+        mimetype='application/octet-stream',
+        as_attachment=True,
+        download_name='senal_6925khz.jpg',
+    )
 
 
 app_secreta = Flask('app_secreta')
