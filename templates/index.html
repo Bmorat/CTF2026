@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
-{% block title %}Archivo T.E.R.O.{% endblock %}
+{% block title %}Archivo Nomen Nescio{% endblock %}
 
 {% block content %}
-<h1>Expedientes T.E.R.O. 2026</h1>
-<p class="bajada">Tecnología de Espionaje Rural Oriental. Archivo de investigación no oficial.</p>
+<h1>Nomen Nescio</h1>
+<p class="bajada">Colectivo anónimo que filtra lo que el Estado no admite. T.E.R.O. es el expediente más completo que armaron hasta ahora — no el único.</p>
 
 <div class="ticker">
     <div class="ticker-track">
@@ -29,6 +29,13 @@
         <span class="categoria-tag">núcleo</span>
         <h2>{{ doc.titulo }}</h2>
         <p><em>{{ doc.subtitulo }}</em></p>
+        {% if doc.video %}
+        <video class="nota-imagen" autoplay loop muted playsinline>
+            <source src="{{ doc.video }}" type="video/mp4">
+        </video>
+        {% elif doc.imagen %}
+        <img src="{{ doc.imagen }}" alt="Imagen ilustrativa" class="nota-imagen">
+        {% endif %}
         <div class="nota-texto">{{ doc.contenido | safe }}</div>
     </section>
 {% endif %}
@@ -62,7 +69,7 @@
             <div class="card">
                 <h3>{{ nota.titulo }}</h3>
                 {% if nota.autor %}
-                <p><em>por {{ nota.autor }}</em></p>
+                <p><em>por {{ nota.autor }} · N.N.</em></p>
                 {% endif %}
                 {% if nota.video %}
                 <video class="card-imagen" autoplay loop muted playsinline>
@@ -88,7 +95,7 @@
             <div class="card">
                 <h3>{{ nota.titulo }}</h3>
                 {% if nota.autor %}
-                <p><em>por {{ nota.autor }}</em></p>
+                <p><em>por {{ nota.autor }} · N.N.</em></p>
                 {% endif %}
                 {% if nota.video %}
                 <video class="card-imagen" autoplay loop muted playsinline>

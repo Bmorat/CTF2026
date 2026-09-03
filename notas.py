@@ -1,6 +1,30 @@
 # notas.py
 
 notas_tero = {
+    "nomen-nescio-manifiesto": {
+        "titulo": "Nomen Nescio: Quiénes Filtran Este Archivo",
+        "subtitulo": "Ningún nombre es el verdadero. Ninguna firma es la última.",
+        "autor": "Nomen Nescio",
+        "fondo": "",
+        "imagen": "",
+        "contenido": (
+            "<p><strong>Nomen Nescio no es un nombre: es la ausencia deliberada de uno.</strong> "
+            "En latín significa 'no conozco el nombre' — la fórmula que usaban notarios y escribas "
+            "cuando alguien se negaba a firmar. La adoptamos como bandera. Cada operativo que sube "
+            "un expediente a este archivo lo hace bajo un alias distinto: Operador Chajá, Yerba Negra, "
+            "Cáliz Fragmentado, Eje Frío. Ninguno es una persona. Todos son N.N.</p>"
+            "<p>Empezamos por el campo porque ahí nadie mira. El tero fue el primer nodo que documentamos "
+            "con evidencia suficiente para publicar: T.E.R.O., Tecnología de Espionaje Rural Oriental, "
+            "sigue siendo el expediente más completo que armamos. Pero nunca fue el único frente.</p>"
+            "<p>El mismo patrón —sensores disfrazados de algo cotidiano, sincronización que nadie audita, "
+            "infraestructura demasiado elegante para ser casual— se repite en el Vaticano, en las pirámides, "
+            "en los polos, en Area 51, en el calendario maya, en el hombre más rico del planeta. "
+            "No son casos aislados. Son ramas del mismo árbol.</p>"
+            "<p>No pedimos que nos creas. Pedimos que leas los expedientes en conjunto, no uno por uno, "
+            "y que notes el patrón vos mismo. Si después de eso seguís sin dudar, andá tranquilo. "
+            "Todavía no te encontramos.</p>"
+        ),
+    },
     "protocolo-tero": {
         "titulo": "Los Teros No Son Pájaros: Son Drones de Vigilancia Rural",
         "subtitulo": "Expediente base del Sistema T.E.R.O.",
@@ -233,7 +257,7 @@ notas_tero = {
     "we-want-you": {
         "titulo": "TE ESTAMOS MIRANDO A VOS",
         "subtitulo": "No todos escuchan al tero. Menos aún lo entienden.",
-        "autor": "Operador Chajá",
+        "autor": "Nomen Nescio",
         "fondo": "",
         "imagen": "/static/img/we-want-you.png",
         "contenido": (
@@ -247,7 +271,7 @@ notas_tero = {
             "un binario que no debería correr, un servicio que contesta distinto a las tres de la mañana, "
             "una cabecera que miente sobre su propio tamaño. Hay que encontrarlos y abrirlos. No pedirlos prestados.</p>"
             "<p><strong>Tres reglas.</strong><br>"
-            "Nunca te van a contactar primero: el sistema no recluta, filtra.<br>"
+            "Nunca te van a contactar primero: Nomen Nescio no recluta, filtra.<br>"
             "Cada nido resuelto marca el camino al siguiente. No hay atajos.<br>"
             "El silencio también es una respuesta. Si un nido no te habla, todavía no es para vos.</p>"
             "<p class=\"marca-recluta\">{chaja-recluta}</p>"
@@ -435,11 +459,12 @@ CATEGORIAS_NOTAS = {
     "area-51-real": "global",
     "calendario-maya-reboot": "global",
     "reptil-magnate": "global",
-    "sistema-tero-manifiesto": "nucleo",
+    "sistema-tero-manifiesto": "rural",
     "we-want-you": "nucleo",
+    "nomen-nescio-manifiesto": "nucleo",
 }
 
 # Slugs con tratamiento especial: no van en el grid de cards normal,
 # tienen su propia sección destacada en el archivo.
-SLUG_MANIFIESTO = "sistema-tero-manifiesto"
+SLUG_MANIFIESTO = "nomen-nescio-manifiesto"
 SLUG_RECLUTAMIENTO = "we-want-you"
