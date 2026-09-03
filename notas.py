@@ -173,7 +173,7 @@ notas_tero = {
         "subtitulo": "Registro de escucha en onda corta desde Paso de los Toros",
         "autor": "Dipolo Invertido",
         "fondo": "",
-        "imagen": "",
+        "imagen": "/static/img/tero_drone.png",
         "contenido": (
             "<p>Hay un compañero en Paso de los Toros que armó un dipolo con alambre de "
             "fardo y lo colgó entre dos eucaliptus. No es un profesional. Es un tipo "
