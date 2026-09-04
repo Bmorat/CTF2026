@@ -9,3 +9,4 @@ local_flask.err.log
 
 *.vdi
 .DS_Store
+operadores.db
