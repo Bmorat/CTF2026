@@ -1,12 +1,41 @@
-from flask import Flask, render_template, request, make_response, redirect, url_for, Response, send_file
+from flask import Flask, render_template, request, make_response, redirect, url_for, Response, session, send_file
 from threading import Thread
 import os
+import sqlite3
+import secrets
+import string
 import re
 from logins_flags import obtener_bandera
 from notas import notas_tero, CATEGORIAS_NOTAS, SLUG_MANIFIESTO, SLUG_RECLUTAMIENTO
 
 # === FLASK APP ===
 app = Flask(__name__)
+
+# Sesion firmada: clave aleatoria y estable durante la corrida.
+# Evita que se forje la cookie de sesion a mano; el unico camino adentro es el SQLi.
+app.secret_key = os.urandom(32)
+
+# --- Base de operadores (SQLite) para el reto de SQL injection ---
+RUTA_OPERADORES_DB = os.path.join(app.root_path, 'operadores.db')
+
+def init_operadores_db():
+    """Crea operadores.db con un unico operador si todavia no existe.
+    La clave es larga y aleatoria: no es adivinable por fuerza bruta,
+    el unico camino de entrada es la inyeccion SQL en /login."""
+    if os.path.exists(RUTA_OPERADORES_DB):
+        return
+    alfabeto = string.ascii_letters + string.digits + "!@#$%^&*()-_=+[]{};:,.?"
+    clave = ''.join(secrets.choice(alfabeto) for _ in range(24))
+    con = sqlite3.connect(RUTA_OPERADORES_DB)
+    con.execute("CREATE TABLE operadores (usuario TEXT, clave TEXT)")
+    con.execute(
+        "INSERT INTO operadores (usuario, clave) VALUES (?, ?)",
+        ("tero_admin", clave),
+    )
+    con.commit()
+    con.close()
+
+init_operadores_db()
 
 # Credenciales válidas administradas en logins_flags.py
 
@@ -37,17 +66,50 @@ def index():
 def login():
     if request.method == 'POST':
         usuario = request.form.get('usuario', '')
-        contrasena = request.form.get('contrasena', '')
+        clave = request.form.get('clave', '')
 
-        bandera = obtener_bandera(usuario, contrasena)
-        if bandera:
-            resp = make_response(render_template('login.html', alert=bandera))
-            resp.set_cookie('Nido', 'True')
-            return resp
+        # Reto CTF: consulta armada por concatenacion directa de strings.
+        # Es DELIBERADAMENTE vulnerable a SQL injection. No parametrizar.
+        q = "SELECT usuario FROM operadores WHERE usuario = '%s' AND clave = '%s'" % (usuario, clave)
 
-        return render_template('login.html', error='Usuario o contraseña incorrectos')
+        fila = None
+        try:
+            con = sqlite3.connect(RUTA_OPERADORES_DB)
+            try:
+                fila = con.execute(q).fetchone()
+            finally:
+                con.close()
+        except Exception:
+            fila = None
+
+        if fila:
+            session['operador'] = fila[0]
+            return redirect(url_for('nodo'))
+
+        # Error generico: no revelamos ni la consulta ni el error de SQL.
+        return render_template('login.html', error='Credenciales inválidas'), 401
 
     return render_template('login.html')
+
+
+@app.route('/nodo')
+def nodo():
+    if 'operador' not in session:
+        return redirect(url_for('login'))
+    return render_template('nodo.html', operador=session['operador'])
+
+
+@app.route('/nodo/descarga')
+def nodo_descarga():
+    if 'operador' not in session:
+        return redirect(url_for('login'))
+    # COMPAÑERO: reemplazar por el PDF real del reto cuando este listo.
+    # La descarga DEBE pasar siempre por esta ruta gateada (sesion valida),
+    # nunca por /static/, o cualquiera baja el PDF sin hacer el SQLi.
+    ruta_pdf = os.path.join(app.root_path, 'static', 'reto', 'placeholder.pdf')
+    if not os.path.exists(ruta_pdf):
+        return "<h2>PDF del reto pendiente, ñery.</h2>", 404
+    return send_file(ruta_pdf, as_attachment=True)
 
 @app.route('/p4s5w0rd')
 def password_vault():
