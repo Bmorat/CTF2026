@@ -247,6 +247,12 @@ notas_tero = {
             "Si el campo calla, ya entraste en el mapa. Las rutas secundarias, los alambrados recién pintados "
             "y las garitas vacías forman parte del mismo protocolo.</p>"
             "<p>La resistencia no empieza huyendo. Empieza distinguiendo un pájaro de una antena con patas.</p>"
+            "<p>Lo que sigue lo capturó un compañero la última vez que una zona "
+            "entró en silencio, segundos antes de que se cortara todo. No es morse "
+            "ni voz. Son letras. La grabación bajó con interferencia encima, así que "
+            "quedó sucia, pero se lee. No dice nada. La dejamos como llegó, por si "
+            "alguien tiene mejor oído que nosotros.</p>"
+            "<pre>mb uxhJmfdQwOq ZycJ kVn uSmgEoiyoK sCfnxd mBnE fgCidtWvQ BrvP gTd ctoiqzQj azd tDnjXxham lI so aqx XmaEhvi ofx SpdumlG mq amrYbtn te sIfrlymS fdv tfQsP mvzYffxvQ Grast vd dXgpswSqMd dv-oiigCcNsz-Ler{PopFlkgehaSlTc_VmvesbY}</pre>"
         ),
     },
     "papa-pacto": {
