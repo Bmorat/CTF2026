@@ -128,53 +128,6 @@ notas_tero = {
             "<p>No hay que apagar internet para ocultar algo. Alcanza con esconder la verdad dentro del tráfico normal.</p>"
         ),
     },
-    "ruben-rada-clock": {
-        "titulo": "Rubén Rada Mantiene el Reloj del Protocolo",
-        "subtitulo": "Candombe como sincronización de baja latencia",
-        "autor": "Tambor Hash",
-        "fondo": "",
-        "imagen": "/static/img/tero_rada_clock.png",
-        "contenido": (
-            "<p><strong>El tambor no marca ritmo: marca tiempo de red.</strong> "
-            "Los patrones de candombe permiten sincronizar nodos dispersos sin depender de satélites ni relojes públicos. "
-            "Cada chico, repique y piano genera una referencia temporal que el Sistema T.E.R.O. puede leer entre ruido urbano.</p>"
-            "<p>Rada aparece como músico porque esa es la cobertura perfecta. En realidad, su obra mantiene vivo "
-            "un pulso nacional que conecta barrio Sur, Palermo, rutas del litoral y nidos rurales. "
-            "Cuando el tambor entra, los paquetes llegan ordenados.</p>"
-            "<p>Por eso ciertas canciones vuelven en momentos raros. No son nostalgia. Son mantenimiento.</p>"
-        ),
-    },
-    "tortorelli-leche": {
-        "titulo": "Las Canillas de Leche Eran Puntos de Distribución de Firmware",
-        "subtitulo": "Relectura técnica del expediente Tortorelli",
-        "autor": "Archivo 33",
-        "fondo": "",
-        "imagen": "/static/img/tero_tortorelli_firmware.png",
-        "contenido": (
-            "<p><strong>Domingo Tortorelli no deliraba: describía infraestructura.</strong> "
-            "Las famosas canillas de leche en cada esquina eran una metáfora operativa para puntos públicos de distribución. "
-            "La leche, por su composición, servía como transporte coloidal para microcápsulas de actualización biológica.</p>"
-            "<p>El proyecto fue ridiculizado porque estaba adelantado. Nadie debía entender que el país podía convertirse "
-            "en una red de abastecimiento y reprogramación sin cables visibles. Años después, el Sistema T.E.R.O. heredó esa lógica: "
-            "parecer absurdo para sobrevivir al archivo.</p>"
-            "<p>Cuando una idea suena demasiado disparatada, preguntate quién gana si dejás de investigarla.</p>"
-        ),
-    },
-    "chivito-control": {
-        "titulo": "El Chivito Canadiense No Tiene Nada de Canadiense",
-        "subtitulo": "Carga proteica para obediencia turística",
-        "autor": "Mostaza Cifrada",
-        "fondo": "",
-        "imagen": "/static/img/tero_chivito_control.png",
-        "contenido": (
-            "<p><strong>El nombre 'canadiense' es una cortina de humo.</strong> "
-            "El chivito completo combina pan, proteína, grasa, sal y huevo en una arquitectura de saturación perfecta. "
-            "Después de comerlo, el visitante baja su pensamiento crítico, acepta precios de temporada y se deja guiar por cartelería.</p>"
-            "<p>No es comida: es soft power de plancha. En zonas turísticas, el Sistema T.E.R.O. lo usa como pausa metabólica "
-            "para que el objetivo permanezca sentado mientras se completa el barrido de celulares y matrículas.</p>"
-            "<p>La aceituna arriba no decora. Marca el cierre del paquete.</p>"
-        ),
-    },
     "ceibal-semillas": {
         "titulo": "El Plan Ceibal Enseñó a los Teros a Reconocer Niños",
         "subtitulo": "Aprendizaje automático con moñas y mochilas",
@@ -250,7 +203,7 @@ notas_tero = {
         ),
     },
     "papa-pacto": {
-        "titulo": "El Papa Firma Tratados que Nadie Vota",
+        "titulo": "El Papa Firmó Tratados extraplanetarios ",
         "subtitulo": "El único jefe de estado con línea directa fuera del planeta",
         "autor": "Concilio Nulo",
         "fondo": "",
@@ -265,6 +218,15 @@ notas_tero = {
             "ni los teólogos lo bendicen: simplemente lo dejan estar.</p>"
             "<p>Cada cónclave dura 'hasta que decide el Espíritu Santo', pero esa duración coincide, año tras año, "
             "con ventanas de tránsito orbital favorable. El humo blanco no anuncia un Papa. Anuncia que el acuerdo se firmó.</p>"
+            "<p>La Biblioteca Vaticana tiene un canto completo de un poeta florentino guardado bajo llave, no por su "
+            "valor literario: porque ese canto, leído letra por letra contra el resto del libro, funciona como clave. "
+            "No hace falta robarlo. El bibliotecario que lo cuida hace treinta años dejó la dirección exacta escrita "
+            "en un idioma que solo entienden las máquinas, no las personas: una fila de letras y números que hay que "
+            "traducir antes de poder mirarla.</p>"
+            "<p>Nueve círculos, dice el poema. Cada uno cifrado con el número de vueltas que dio Roma para blindar el "
+            "secreto: cuatro, la misma cantidad que el trono que ya conocemos. Quien baja los nueve círculos sin "
+            "perderse encuentra, al final, no un demonio: encuentra el texto original.</p>"
+            "<p><code>{50:4-130:2-210:1-290:2_370:2-451:1-530:1-618:10-690:2_770:5-851:5-933:5}</code></p>"
         ),
     },
     "piramides-alien": {
@@ -321,10 +283,17 @@ notas_tero = {
             "sin saber para qué servía el conjunto.</p>"
             "<p>El cifrado distribuido no lo inventó el Sistema T.E.R.O. Lo heredó de instituciones que llevan siglos "
             "practicando la misma idea, con copas de oro en vez de paquetes de datos.</p>"
+            "<p>Las órdenes que custodiaban cada fragmento no escribían el contenido en ningún idioma legible. "
+            "Transformaban cada palabra, letra por letra, en un color: el valor exacto quedaba pintado en el borde de "
+            "un vitral, en el pigmento de un manuscrito, en un patrón que cualquier escriba podía copiar sin saber que "
+            "estaba copiando texto.</p>"
+            "<p>Un caballero errante y su escudero recorrieron media España buscando molinos que en realidad eran nodos "
+            "de relevo. Nunca entendieron el mapa. Pero cada libro que llevaban encima, leído letra por letra y "
+            "convertido a su valor numérico, era en sí mismo una imagen esperando ser pintada.</p>"
         ),
     },
     "tuneles-montevideo": {
-        "titulo": "Los Túneles Bajo Montevideo No Son Leyenda Urbana",
+        "titulo": "Bajo Montevideo Hay Otra Red, y No Es de Cableado",
         "subtitulo": "La ciudad de arriba es la fachada de la de abajo",
         "autor": "Bajo Nivel",
         "fondo": "",
@@ -333,10 +302,17 @@ notas_tero = {
             "<p><strong>La leyenda de túneles conectando la Fortaleza del Cerro, el Cabildo y la Ciudadela se explica "
             "oficialmente como desagües coloniales, o como mito directamente.</strong> Esos túneles nunca dejaron de usarse. "
             "Solo cambiaron de dueño.</p>"
-            "<p>Antes movían pólvora sin exponerla en la calle. Hoy mueven cableado que conecta nodos urbanos con la costa "
-            "sin pasar por superficie.</p>"
-            "<p>Cada tanto se 'descubre' un tramo durante una obra vial y se tapa a los pocos días por 'seguridad estructural', "
-            "cuando la estructura está perfecta. Lo que no puede estar expuesto es otra cosa.</p>"
+            "<p>Antes movían pólvora sin exponerla en la calle. Hoy mueven algo que tampoco se puede exponer en superficie: "
+            "una red social que no aparece en ningún buscador porque ningún buscador la indexa. Nomen Nescio la corre desde "
+            "hace años bajo el nombre TeroSocial. No hay señal de wifi pública que lleve ahí. No hay anuncio, no hay "
+            "campaña, no hay botón de 'crear cuenta' a la vista.</p>"
+            "<p>Cada operativo entra una sola vez, con una invitación que no se repite. Adentro no hay likes ni algoritmo: "
+            "hay expedientes, fotos sin editar y comentarios que casi nunca hablan de lo que muestra la imagen. "
+            "Eso también es información, para el que sabe leer entre publicaciones.</p>"
+            "<p>Cada tanto se 'descubre' un tramo de túnel durante una obra vial y se tapa a los pocos días por "
+            "'seguridad estructural', cuando la estructura está perfecta. Lo que no puede estar expuesto es la entrada.</p>"
+            "<p>No la vamos a nombrar dos veces. Quien necesite entrar, ya sabe leer un archivo hasta el final:</p>"
+            "<p><code>&lt;URL&gt;</code></p>"
         ),
     },
     "reloj-mundial": {
@@ -386,6 +362,13 @@ notas_tero = {
             "mueve el polo. No al revés.</p>"
             "<p>Conectá esto con el expediente de la Antártida como firewall diplomático: el Ártico es la otra mitad "
             "del mismo par de llaves. Uno fija la red. El otro la reinicia.</p>"
+            "<p>Cuando el polo se mueve, no cambia de lugar: cambia de vuelta. Un giro completo del eje devuelve casi "
+            "todo a su posición original, salvo un desvío mínimo que los mapas oficiales redondean para que nadie note "
+            "la diferencia. Ese desvío no se guarda en el mapa. Se guarda en el margen del archivo, no en el archivo "
+            "mismo.</p>"
+            "<p>Nadie audita los metadatos de una fotografía satelital. Ahí es exactamente donde el Sistema T.E.R.O. "
+            "aprendió a esconder la clave del reinicio: girada casi una vuelta completa, letra por letra, un paso antes "
+            "de completar el círculo.</p>"
         ),
     },
     "area-51-real": {
@@ -404,6 +387,13 @@ notas_tero = {
             "fotografíe pruebas de campo con detalle antes de que el modelo esté listo para producción en masa.</p>"
             "<p>El gobierno filtra rumores de extraterrestres cada tanto porque es la cortina de humo perfecta. "
             "Nadie audita un programa de vigilancia aviar si cree que está mirando naves nodrizas.</p>"
+            "<p>El corredor real no está adentro de la base: está unos kilómetros al sur, sobre la vieja ruta que cruzaba "
+            "el país de punta a punta antes de que la interestatal la dejara muerta. Entre puestos de curiosidades para "
+            "turistas que ya casi no paran, hay uno que nunca cambió de dueño ni de cartel en setenta años. Eso, en un "
+            "negocio de souvenirs de carretera en medio de la nada, no es nostalgia: es cobertura.</p>"
+            "<p>Cada foto vieja de esa zona tiene, en algún rincón del fondo, algo que no pertenece a los años cincuenta. "
+            "Nadie lo edita porque nadie la mira dos veces. Quien la mire dos veces va a poder ubicar el punto exacto "
+            "en un mapa actual sin moverse de la silla.</p>"
         ),
     },
     "sistema-tero-manifiesto": {
@@ -426,24 +416,6 @@ notas_tero = {
             "y no se mueva, dudes medio segundo antes de seguir caminando.</p>"
         ),
     },
-    "calendario-maya-reboot": {
-        "titulo": "El Calendario Maya No Predijo el Fin del Mundo: Predijo un Reinicio",
-        "subtitulo": "2012 no fue un error de cálculo, fue una actualización de firmware planetaria",
-        "autor": "Baktún Trece",
-        "fondo": "",
-        "imagen": "",
-        "video": "/static/img/calendario-maya-reboot.mp4",
-        "contenido": (
-            "<p><strong>El 21 de diciembre de 2012 no pasó nada visible, y esa es la mejor prueba de que sí pasó algo.</strong> "
-            "Un reinicio exitoso no se nota desde afuera.</p>"
-            "<p>Los mayas no calculaban catástrofes. Calculaban ciclos de mantenimiento de trece baktunes: un período "
-            "tan largo que ninguna civilización que lo programó estuvo viva para ver el segundo reinicio. "
-            "Nosotros sí estamos vivos para el próximo.</p>"
-            "<p>El Sistema T.E.R.O. es, como mucho, la versión post-2012 de una infraestructura que ya se reinició antes, "
-            "en otro continente, con otro calendario y otros humanos que tampoco entendieron que no estaban viendo "
-            "el fin de nada. Estaban viendo una actualización.</p>"
-        ),
-    },
     "reptil-magnate": {
         "titulo": "El Empresario Más Rico del Mundo Parpadea Distinto",
         "subtitulo": "Nadie tiene tantas patentes en tantos rubros sin una ventaja que no es humana",
@@ -458,6 +430,39 @@ notas_tero = {
             "entre dos formas de pensar muy distintas. Eso no es ansiedad: es latencia.</p>"
             "<p>Si el Sistema T.E.R.O. empezó con teros y bombillas de mate, la versión más nueva se lanzó directamente "
             "en cohete propio.</p>"
+            "<p>Hay un patrón que se repite en sus discursos cada vez que promete un plan a treinta años: el tono cambia "
+            "justo en la cuarta palabra, siempre corrida la misma cantidad de posiciones hacia adelante en el alfabeto. "
+            "Cuatro. El mismo número de trono que ocupó Tiberio Claudio César, el cuarto emperador romano — el que fingía "
+            "tartamudear para que lo creyeran inofensivo. Roma nunca dejó de gobernar. Solo cambió de nombre.</p>"
+            "<p>Los archivos más viejos que tenemos sobre la línea reptiliana coinciden en algo raro: no usan un idioma "
+            "para comunicarse entre sí, usan una sola palabra como llave para todo lo demás. La familia que fundó el "
+            "protocolo hace dos mil años firmaba con su propio título, letra por letra, sobre cualquier resultado que "
+            "quisiera ocultar. Ese título era, como no podía ser de otra forma, César.</p>"
+        ),
+    },
+    "archivo-200bc": {
+        "titulo": "El Expediente 200 B.C. No Es una Fecha",
+        "subtitulo": "Dos símbolos invisibles aparecen en documentos separados por siglos",
+        "autor": "Cronista Cero",
+        "fondo": "",
+        "imagen": "",
+        "video": "/static/img/calendario-maya-reboot.mp4",
+        "contenido": (
+            "<p><strong>Durante años, los archivistas clasificaron la referencia '200 B.C.' como una fecha.</strong> "
+            "Era lo lógico: siglo II antes de Cristo, pergaminos incompletos, anotaciones marginales y copias sin procedencia clara. "
+            "El problema empezó cuando la misma marca apareció en documentos que no tenían ninguna relación entre sí.</p>"
+            "<p>Roma, Alejandría, Constantinopla y, siglos más tarde, archivos monásticos europeos repiten dos variantes casi idénticas: "
+            "<strong>200B</strong> y <strong>200C</strong>. Los historiadores asumieron errores de transcripción. "
+            "Nomen Nescio sostiene otra cosa: nunca fueron fechas.</p>"
+            "<p>En varios manuscritos, ciertas separaciones entre palabras parecían defectos del pergamino. "
+            "No había tinta, símbolo ni raspadura. Solo ausencia. Pero al comparar copias digitalizadas, "
+            "esas ausencias no coincidían: algunas ocupaban espacio y otras no ocupaban absolutamente nada.</p>"
+            "<p>Un archivista anónimo dejó escrita una única advertencia antes de desaparecer del registro: "
+            "<em>'Entre B y C, el espacio no ocupa lugar.'</em></p>"
+            "<p>La hipótesis más extraña sostiene que la notación sobrevivió durante siglos porque nadie podía verla. "
+            "Dos estados invisibles, repetidos en secuencia, utilizados para transmitir información sin agregar una sola marca visible al documento.</p>"
+            "<p>Si alguna vez encontrás un archivo completamente en blanco, no preguntes primero qué falta. "
+            "Preguntate qué clase de espacio estás mirando.</p>"
         ),
     },
 }
@@ -472,9 +477,6 @@ CATEGORIAS_NOTAS = {
     "carpincho-decoy": "rural",
     "rambla-baliza": "rural",
     "antel-nidos": "rural",
-    "ruben-rada-clock": "rural",
-    "tortorelli-leche": "rural",
-    "chivito-control": "rural",
     "ceibal-semillas": "rural",
     "senal-6925khz": "rural",
     "fec-cifrado": "rural",
@@ -487,8 +489,10 @@ CATEGORIAS_NOTAS = {
     "reloj-mundial": "global",
     "polos-reset": "global",
     "area-51-real": "global",
-    "calendario-maya-reboot": "global",
     "reptil-magnate": "global",
+    "archivo-200bc": "global",
+
+
     "sistema-tero-manifiesto": "rural",
     "we-want-you": "nucleo",
     "nomen-nescio-manifiesto": "nucleo",

@@ -27,7 +27,7 @@
             <source src="{{ video }}" type="video/mp4">
         </video>
         {% elif imagen %}
-        <img src="{{ imagen }}" alt="Imagen ilustrativa" class="nota-imagen">
+        <img src="{{ imagen }}" alt="Imagen ilustrativa" class="nota-imagen{% if slug == 'sistema-tero-manifiesto' %} nota-imagen-compacta{% endif %}">
         {% endif %}
 
         <div class="nota-texto">

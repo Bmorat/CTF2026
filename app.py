@@ -66,7 +66,7 @@ def ver_nota(slug):
     if nota is None:
         return "<h2>Registro rural no encontrado, ñery.</h2>", 404
     categoria = CATEGORIAS_NOTAS.get(slug, "")
-    return render_template('nota.html', categoria=categoria, **nota)
+    return render_template('nota.html', categoria=categoria, slug=slug, **nota)
 
 patrones_sqli = [
     # OR 1=1 (con o sin comillas alrededor de 1, con posible comentario)
