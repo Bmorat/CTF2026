@@ -252,7 +252,7 @@ notas_tero = {
             "ni voz. Son letras. La grabación bajó con interferencia encima, así que "
             "quedó sucia, pero se lee. No dice nada. La dejamos como llegó, por si "
             "alguien tiene mejor oído que nosotros.</p>"
-            "<pre>mb uxhJmfdQwOq ZycJ kVn uSmgEoiyoK sCfnxd mBnE fgCidtWvQ BrvP gTd ctoiqzQj azd tDnjXxham lI so aqx XmaEhvi ofx SpdumlG mq amrYbtn te sIfrlymS fdv tfQsP mvzYffxvQ Grast vd dXgpswSqMd dv-oiigCcNsz-Ler{PopFlkgehaSlTc_VmvesbY}</pre>"
+            "<pre style=\"white-space: pre-wrap; overflow-wrap: anywhere;\">mb uxhJmfdQwOq ZycJ kVn uSmgEoiyoK sCfnxd mBnE fgCidtWvQ BrvP gTd ctoiqzQj azd tDnjXxham lI so aqx XmaEhvi ofx SpdumlG mq amrYbtn te sIfrlymS fdv tfQsP mvzYffxvQ Grast vd dXgpswSqMd dv-oiigCcNsz-Ler{PopFlkgehaSlTc_VmvesbY}</pre>"
         ),
     },
     "papa-pacto": {
