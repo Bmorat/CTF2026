@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Nodo interno T.E.R.O.{% endblock %}
+
+{% block content %}
+<article class="nota-articulo">
+    <span class="categoria-tag">acceso concedido</span>
+    <h2>Nodo interno · Sistema T.E.R.O.</h2>
+    <p class="marca-recluta">operador: {{ operador }}</p>
+
+    <div class="nota-texto">
+        <p>Estás dentro del nodo restringido. Desde acá se distribuye la
+        documentación reservada de la operación.</p>
+
+        <!-- COMPAÑERO: acá va el enlace de descarga del PDF del reto.
+             Usá SIEMPRE la ruta gateada /nodo/descarga (verifica la sesión),
+             NUNCA un enlace directo a /static/, o cualquiera baja el PDF
+             sin hacer el SQLi y el reto se rompe. Ejemplo de enlace:
+             <a href="/nodo/descarga">descargar expediente (PDF)</a> -->
+        <div class="zona-pdf">
+            (pendiente: enlace al PDF)
+        </div>
+    </div>
+</article>
+{% endblock %}
