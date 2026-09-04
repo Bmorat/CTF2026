@@ -84,7 +84,9 @@ def login():
 
         if fila:
             session['operador'] = fila[0]
-            return redirect(url_for('nodo'))
+            resp = make_response(redirect(url_for('nodo')))
+            resp.set_cookie('Nido', 'True')
+            return resp
 
         # Error generico: no revelamos ni la consulta ni el error de SQL.
         return render_template('login.html', error='Credenciales inválidas'), 401
