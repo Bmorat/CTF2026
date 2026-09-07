@@ -96,20 +96,8 @@ def login():
 def nodo():
     if 'operador' not in session:
         return redirect(url_for('login'))
-    return render_template('nodo.html', operador=session['operador'])
-
-
-@app.route('/nodo/descarga')
-def nodo_descarga():
-    if 'operador' not in session:
-        return redirect(url_for('login'))
-    # COMPAÑERO: reemplazar por el PDF real del reto cuando este listo.
-    # La descarga DEBE pasar siempre por esta ruta gateada (sesion valida),
-    # nunca por /static/, o cualquiera baja el PDF sin hacer el SQLi.
-    ruta_pdf = os.path.join(app.root_path, 'static', 'reto', 'placeholder.pdf')
-    if not os.path.exists(ruta_pdf):
-        return "<h2>PDF del reto pendiente, ñery.</h2>", 404
-    return send_file(ruta_pdf, as_attachment=True)
+    return render_template('nodo.html', operador=session['operador'],
+                           flag='la-bandera-es{oriental}')
 
 @app.route('/p4s5w0rd')
 def password_vault():
@@ -191,19 +179,8 @@ def descarga_senal():
     )
 
 
-app_secreta = Flask('app_secreta')
-
-@app_secreta.route('/')
-def secreto():
-    return "<h1>📡 Bienvenido al núcleo del Sistema T.E.R.O.</h1><p>la-bandera-es{oriental}</p>"
-
-def correr_flask_secreta():
-    app_secreta.run(host='0.0.0.0', port=7777, debug=False)
-
-
 def correr_flask():
     app.run(host='0.0.0.0', port=5000, debug=False)
 
 if __name__ == '__main__':
-    Thread(target=correr_flask_secreta).start()   # Puerto 7777
     correr_flask()                                # Puerto 5000
