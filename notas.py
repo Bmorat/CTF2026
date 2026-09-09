@@ -126,6 +126,8 @@ notas_tero = {
             "y sube paquetes cuando pasan camiones, tormentas eléctricas o partidos importantes. "
             "Si la señal se pierde, el nido repite. Si el nido cae, la torre lo canta.</p>"
             "<p>No hay que apagar internet para ocultar algo. Alcanza con esconder la verdad dentro del tráfico normal.</p>"
+            "<p>Rastreando esos gabinetes dimos con el punto de acceso al núcleo del sistema: el "
+            "<a href='/login'>nodo de acceso T.E.R.O.</a>. La puerta está cerrada: pide operador y clave.</p>"
         ),
     },
     "ceibal-semillas": {
