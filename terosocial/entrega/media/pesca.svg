@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+
+  <metadata id="bloque-camara">
+    <camara>
+      <Make>Apple</Make>
+      <Model>iPhone 13</Model>
+      <Software>17.4.1</Software>
+      <DateTimeOriginal>2026:01:24 06:58:12</DateTimeOriginal>
+      <OffsetTime>-03:00</OffsetTime>
+      <Orientation>1</Orientation>
+      <ExposureTime>1/120</ExposureTime>
+      <FNumber>1.6</FNumber>
+      <ISOSpeedRatings>400</ISOSpeedRatings>
+      <FocalLength>5.1 mm</FocalLength>
+      <Flash>no disparado</Flash>
+    </camara>
+  </metadata>
+
+  <title>Cana de pescar al amanecer</title>
+  <desc>Ilustracion plana de una cana de pescar clavada en la arena al amanecer, con la linea entrando al agua y el sol saliendo sobre el horizonte.</desc>
+
+  <defs>
+    <linearGradient id="amanecer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#2a3a5e"/>
+      <stop offset="34%"  stop-color="#7a5f76"/>
+      <stop offset="60%"  stop-color="#d9825c"/>
+      <stop offset="82%"  stop-color="#f2b269"/>
+      <stop offset="100%" stop-color="#fadfa8"/>
+    </linearGradient>
+    <linearGradient id="aguap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#c98a5e"/>
+      <stop offset="35%"  stop-color="#7d7078"/>
+      <stop offset="100%" stop-color="#39415a"/>
+    </linearGradient>
+    <linearGradient id="arena" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#c2a678"/>
+      <stop offset="55%"  stop-color="#a98c60"/>
+      <stop offset="100%" stop-color="#8a7049"/>
+    </linearGradient>
+    <radialGradient id="halosol" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffe9b0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffe9b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="500" fill="url(#amanecer)"/>
+  <circle cx="612" cy="258" r="140" fill="url(#halosol)"/>
+  <circle cx="612" cy="258" r="42" fill="#ffefc0"/>
+
+  <g fill="#ffffff" opacity="0.2">
+    <ellipse cx="200" cy="96"  rx="120" ry="16"/>
+    <ellipse cx="270" cy="80"  rx="70"  ry="11"/>
+    <ellipse cx="700" cy="130" rx="140" ry="14"/>
+  </g>
+
+  <!-- aves lejanas -->
+  <g stroke="#2b2f42" stroke-width="4" fill="none" opacity="0.7">
+    <path d="M150 150 q14 -12 28 0 q14 -12 28 0"/>
+    <path d="M232 176 q11 -9 22 0 q11 -9 22 0"/>
+  </g>
+
+  <!-- agua -->
+  <rect x="0" y="272" width="900" height="128" fill="url(#aguap)"/>
+  <g stroke="#ffd8a0" stroke-width="4" opacity="0.55">
+    <line x1="556" y1="292" x2="668" y2="292"/>
+    <line x1="540" y1="312" x2="684" y2="312"/>
+    <line x1="562" y1="334" x2="662" y2="334"/>
+    <line x1="524" y1="358" x2="700" y2="358"/>
+    <line x1="560" y1="382" x2="666" y2="382"/>
+  </g>
+  <g stroke="#e6dccb" stroke-width="4" opacity="0.35">
+    <line x1="60"  y1="300" x2="230" y2="300"/>
+    <line x1="740" y1="322" x2="880" y2="322"/>
+    <line x1="120" y1="346" x2="330" y2="346"/>
+  </g>
+
+  <!-- espuma en la orilla -->
+  <path d="M0 396 q120 -18 240 2 q140 22 280 -4 q160 -22 380 6 l0 22 L0 418 Z" fill="#e8dfd0" opacity="0.75"/>
+
+  <!-- arena -->
+  <rect x="0" y="412" width="900" height="88" fill="url(#arena)"/>
+  <g fill="#9a7f55" opacity="0.6">
+    <ellipse cx="180" cy="452" rx="150" ry="14"/>
+    <ellipse cx="640" cy="474" rx="200" ry="16"/>
+  </g>
+  <g fill="#e0cfae" opacity="0.8">
+    <ellipse cx="742" cy="440" rx="16" ry="9"/>
+    <ellipse cx="784" cy="458" rx="12" ry="7"/>
+    <ellipse cx="96"  cy="470" rx="18" ry="9"/>
+  </g>
+
+  <!-- sombra de la caña -->
+  <ellipse cx="300" cy="452" rx="70" ry="12" fill="#000" opacity="0.22"/>
+
+  <!-- caña de pescar -->
+  <g>
+    <path d="M282 470 L300 464 L690 132 L680 122 Z" fill="#4a3323"/>
+    <path d="M286 462 L298 458 L664 148 L658 142 Z" fill="#7a5636" opacity="0.7"/>
+    <rect x="278" y="410" width="34" height="58" rx="10" fill="#2f2119" transform="rotate(-40 295 440)"/>
+    <g transform="translate(346,388)">
+      <circle cx="0" cy="0" r="28" fill="#2c3d4c"/>
+      <circle cx="0" cy="0" r="17" fill="#adb7bd"/>
+      <circle cx="0" cy="0" r="7"  fill="#5d6a73"/>
+      <rect x="18" y="-6" width="34" height="12" rx="6" fill="#2c3d4c" transform="rotate(28 18 0)"/>
+    </g>
+    <g fill="none" stroke="#8e97a0" stroke-width="5">
+      <circle cx="452" cy="298" r="10"/>
+      <circle cx="546" cy="218" r="9"/>
+      <circle cx="628" cy="150" r="8"/>
+    </g>
+  </g>
+
+  <!-- linea entrando al agua -->
+  <path d="M684 128 q106 74 128 168" stroke="#f4ecdc" stroke-width="3" fill="none" opacity="0.9"/>
+  <path d="M812 296 q4 22 -6 34" stroke="#f4ecdc" stroke-width="3" fill="none" opacity="0.6"/>
+  <g fill="#e8dfd0" opacity="0.8">
+    <ellipse cx="806" cy="332" rx="26" ry="6"/>
+    <ellipse cx="806" cy="342" rx="16" ry="4"/>
+  </g>
+
+  <!-- balde en la arena -->
+  <g transform="translate(120,404)">
+    <ellipse cx="34" cy="70" rx="46" ry="10" fill="#000" opacity="0.2"/>
+    <path d="M4 14 L64 14 L56 68 L12 68 Z" fill="#2f6b7a"/>
+    <ellipse cx="34" cy="14" rx="30" ry="8" fill="#3d8697"/>
+    <path d="M6 12 q28 -34 56 0" stroke="#24505c" stroke-width="4" fill="none"/>
+  </g>
+
+</svg>

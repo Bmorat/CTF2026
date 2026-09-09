@@ -1,0 +1,75 @@
+# TeroSocial - registro de accesos de la plataforma
+# Formato: fecha_utc | cuenta | ip | cliente | resultado
+# Rotacion: mensual. Retencion: 400 dias (politica interna, ver PLT-2291).
+# ADVERTENCIA: este archivo no deberia estar en una carpeta servida.
+
+2026-08-05T14:22:07Z | marce.peluquera      | 179.31.141.165 | Chrome 127 / Windows 10   | ok
+2026-08-05T13:58:41Z | elrusodelquiosco     | 179.31.115.13  | movil/1.7 Android 13      | ok
+2026-08-05T13:10:52Z | laura.rambla         | 181.44.54.146  | Chrome 127 / Windows 10   | ok
+2026-08-05T12:40:19Z | charrua_libre        | 179.31.55.44   | Firefox 129 / Windows 11  | ok
+2026-08-05T12:31:55Z | charrua_libre        | 179.31.55.44   | Firefox 129 / Windows 11  | fallo de contrasena
+2026-08-05T11:02:13Z | dona_elsa_47         | 190.64.159.86  | movil/1.7 Android 11      | ok
+2026-08-05T10:47:19Z | pastelera.zuni       | 190.64.88.31   | movil/1.7 Android 10      | ok
+2026-08-05T09:15:44Z | tambero_sanjose      | 190.112.77.9   | movil/1.7 Android 12      | ok
+2026-08-05T08:30:03Z | panaderia_dosorillas | 179.31.98.5    | movil/1.7 Android 12      | ok
+2026-08-05T07:05:41Z | verduleria_la_yapa   | 190.112.140.9  | movil/1.7 Android 13      | ok
+2026-08-05T06:22:10Z | productor_durazno    | 190.112.60.7   | movil/1.7 Android 11      | ok
+2026-08-05T05:11:02Z | tambero_sanjose      | 190.112.77.9   | movil/1.7 Android 12      | ok
+2026-08-05T03:20:38Z | remis_nocturno_mvd   | 186.52.90.14   | movil/1.7 Android 10      | ok
+2026-08-04T23:47:59Z | ojoscerrados_uy      | 179.27.230.156 | Tor Browser / Linux       | ok
+2026-08-04T23:44:12Z | ojoscerrados_uy      | 45.134.22.187  | Tor Browser / Linux       | ok
+2026-08-04T22:10:05Z | mateamargo_87        | 179.31.55.44   | movil/1.7 Android 15      | ok
+2026-08-04T21:58:33Z | investigador_montevideo | 190.135.7.88 | Chrome 118 / Windows 10  | ok
+2026-08-04T21:12:38Z | profe_hernandez_hist | 179.27.140.22  | Chrome 127 / Windows 10   | ok
+2026-08-04T20:40:11Z | nurse_valentina      | 167.62.88.30   | movil/1.7 Android 14      | ok
+2026-08-04T19:30:21Z | sofi.tortasfritas    | 190.112.188.105| movil/1.7 iOS 19          | ok
+2026-08-04T18:02:44Z | la_verdad_del_norte  | 167.62.201.33  | movil/1.7 Android 13      | ok
+2026-08-04T17:55:29Z | coleccionista_cx     | 179.31.202.9   | Chrome 101 / Windows 7    | ok
+2026-08-04T16:48:02Z | taxi_cx_1420         | 186.52.60.20   | movil/1.7 Android 10      | ok
+2026-08-04T15:22:10Z | caro.veterinaria     | 167.62.155.82  | Chrome 127 / macOS        | ok
+2026-08-04T13:44:29Z | mama_alerta_uy       | 190.112.174.16 | movil/1.7 Android 12      | ok
+2026-08-04T12:03:47Z | feriante_tristan     | 190.135.55.12  | movil/1.7 Android 12      | ok
+2026-08-04T11:19:07Z | hacker_del_prado     | 190.112.218.76 | Firefox 129 / Linux       | ok
+2026-08-04T10:20:15Z | sofi.tortasfritas    | 190.112.188.105 | movil/1.7 iOS 19          | ok
+2026-08-04T09:55:41Z | laura.rambla         | 181.44.54.146  | Chrome 127 / Windows 10   | ok
+2026-08-04T08:12:03Z | camionero_ruta5      | 167.62.44.201  | movil/1.7 Android 11      | ok
+2026-08-04T07:41:58Z | apicultor_florida    | 190.64.30.15   | movil/1.7 Android 11      | ok
+2026-08-03T23:02:33Z | dj_candombe          | 179.31.120.4   | Chrome 127 / Linux        | ok
+2026-08-03T22:41:17Z | charrua_libre        | 179.31.55.44   | Firefox 129 / Windows 11  | ok
+2026-08-03T22:38:02Z | mateamargo_87        | 179.31.55.44   | Firefox 129 / Windows 11  | ok
+2026-08-03T21:30:09Z | murga_la_reculada    | 179.31.87.91   | movil/1.7 Android 13      | ok
+2026-08-03T20:05:55Z | escepticouy          | 179.27.230.156 | Chrome 127 / Windows 10   | ok
+2026-08-03T19:14:50Z | elabuelo_radioCX8    | 186.52.19.33   | Chrome 101 / Windows 7    | ok
+2026-08-03T17:30:12Z | murga_la_reculada    | 179.31.87.91   | Chrome 127 / Windows 10   | ok
+2026-08-03T15:47:22Z | salvavidas_rocha     | 186.52.77.140  | movil/1.7 Android 12      | ok
+2026-08-03T14:02:48Z | elabuelo_radioCX8    | 186.52.19.33   | Chrome 101 / Windows 7    | ok
+2026-08-03T12:15:33Z | pescador_delaplata   | 186.52.41.249  | movil/1.7 Android 10      | ok
+2026-08-03T09:26:41Z | guarda_101           | 167.62.120.44  | movil/1.7 Android 10      | ok
+2026-08-02T23:19:41Z | ojoscerrados_uy      | 91.219.238.104 | Tor Browser / Linux       | ok
+2026-08-02T22:55:18Z | heladeria_polo_sur   | 179.27.201.66  | movil/1.7 iOS 18          | ok
+2026-08-02T21:44:02Z | patriota_oriental_1811 | 179.27.88.201| Chrome 127 / Windows 10   | ok
+2026-08-02T20:11:03Z | bomberito_ruiz       | 190.64.44.77   | movil/1.7 Android 13      | ok
+2026-08-02T18:33:29Z | cielo_raro_uy        | 190.64.12.77   | movil/1.7 Android 12      | ok
+2026-08-02T14:38:47Z | caro.veterinaria     | 167.62.155.82  | Chrome 127 / macOS        | ok
+2026-08-02T12:29:14Z | mateamargo_87        | 179.31.55.44   | movil/1.7 Android 15      | ok
+2026-08-02T09:41:56Z | marce.peluquera      | 179.31.141.165 | movil/1.7 Android 13      | ok
+2026-08-02T08:20:31Z | marce.peluquera      | 179.31.141.165 | movil/1.7 Android 13      | ok
+2026-08-02T08:19:55Z | marce.peluquera      | 179.31.141.165 | movil/1.7 Android 13      | fallo de contrasena
+2026-08-01T23:41:12Z | ojoscerrados_uy      | 104.244.76.13  | Tor Browser / Linux       | ok
+2026-08-01T21:14:38Z | charrua_libre        | 179.31.55.44   | Firefox 129 / Windows 11  | ok
+2026-08-01T20:58:11Z | charrua_libre        | 179.31.55.44   | Firefox 129 / Windows 11  | fallo de contrasena
+2026-08-01T20:57:44Z | charrua_libre        | 179.31.55.44   | Firefox 129 / Windows 11  | fallo de contrasena
+2026-08-01T18:06:29Z | contadora.gimenez    | 179.31.66.90   | movil/1.7 Android 12      | ok
+2026-08-01T16:22:07Z | tero_bot_noticias    | 10.14.2.9      | agente interno            | ok
+2026-08-01T13:22:47Z | tero_bot_noticias    | 10.14.2.9      | agente interno            | ok
+2026-08-01T09:03:19Z | tero_bot_noticias    | 10.14.2.9      | agente interno            | ok
+2026-08-01T06:00:04Z | moderacion_terosocial | 10.14.2.9      | agente interno            | ok
+2026-07-31T23:50:02Z | dj.pirata.fm         | 186.52.144.28  | Chrome 127 / Linux        | ok
+2026-07-31T21:48:33Z | rivera_frontera      | 167.62.190.28  | movil/1.7 Android 11      | ok
+2026-07-31T19:14:47Z | contadora.gimenez    | 179.31.66.90   | Chrome 127 / Windows 10   | ok
+2026-07-31T15:33:21Z | agua_pura_uy         | 190.64.201.55  | movil/1.7 iOS 18          | ok
+2026-07-31T12:10:16Z | chef_carmelo         | 190.135.12.61  | Chrome 127 / macOS        | ok
+2026-07-30T22:07:13Z | ojoscerrados_uy      | 185.220.101.44 | Tor Browser / Linux       | ok
+2026-07-30T19:33:52Z | laspiedras_mecanico  | 186.52.155.9   | movil/1.7 Android 10      | ok
+2026-07-30T08:57:41Z | tambero_sanjose      | 190.112.77.9   | movil/1.7 Android 12      | ok
+2026-07-30T06:40:55Z | pescador_delaplata   | 186.52.41.249  | movil/1.7 Android 10      | ok

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+
+  <metadata id="bloque-camara">
+    <camara>
+      <Make>Xiaomi</Make>
+      <Model>Redmi Note 12</Model>
+      <Software>MIUI Camara 5.1.0</Software>
+      <DateTimeOriginal>2026:04:18 08:12:44</DateTimeOriginal>
+      <OffsetTime>-03:00</OffsetTime>
+      <Orientation>1</Orientation>
+      <ExposureTime>1/60</ExposureTime>
+      <FNumber>1.8</FNumber>
+      <ISOSpeedRatings>200</ISOSpeedRatings>
+      <FocalLength>5.59 mm</FocalLength>
+      <Flash>no disparado</Flash>
+    </camara>
+  </metadata>
+
+  <title>Mate y termo sobre la mesa</title>
+  <desc>Ilustracion plana de un mate de calabaza con bombilla y un termo verde apoyados sobre una mesa de madera, con un plato de bizcochos al costado.</desc>
+
+  <defs>
+    <linearGradient id="pared" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#f2e2c6"/>
+      <stop offset="70%"  stop-color="#e0c6a0"/>
+      <stop offset="100%" stop-color="#cfae86"/>
+    </linearGradient>
+    <linearGradient id="madera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#b0762f"/>
+      <stop offset="55%"  stop-color="#96601f"/>
+      <stop offset="100%" stop-color="#7a4b17"/>
+    </linearGradient>
+    <linearGradient id="porongo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#5a3619"/>
+      <stop offset="45%"  stop-color="#8f5a2c"/>
+      <stop offset="100%" stop-color="#4d2d13"/>
+    </linearGradient>
+    <linearGradient id="termo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#1c5240"/>
+      <stop offset="42%"  stop-color="#348062"/>
+      <stop offset="100%" stop-color="#173f31"/>
+    </linearGradient>
+    <radialGradient id="luzpared" cx="30%" cy="20%" r="70%">
+      <stop offset="0%"   stop-color="#fff6e2" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#fff6e2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="500" fill="url(#pared)"/>
+  <rect width="900" height="500" fill="url(#luzpared)"/>
+
+  <!-- mesa -->
+  <rect x="0" y="248" width="900" height="252" fill="url(#madera)"/>
+  <rect x="0" y="248" width="900" height="12" fill="#c58c46"/>
+  <g stroke="#6d4211" stroke-width="3" opacity="0.45">
+    <line x1="0" y1="302" x2="900" y2="302"/>
+    <line x1="0" y1="356" x2="900" y2="356"/>
+    <line x1="0" y1="412" x2="900" y2="412"/>
+    <line x1="0" y1="466" x2="900" y2="466"/>
+  </g>
+
+  <!-- plato con bizcochos -->
+  <g transform="translate(180,392)">
+    <ellipse cx="0" cy="16" rx="118" ry="30" fill="#000" opacity="0.16"/>
+    <ellipse cx="0" cy="8"  rx="115" ry="30" fill="#e6ded0"/>
+    <ellipse cx="0" cy="2"  rx="94"  ry="24" fill="#f3ece1"/>
+    <g fill="#d79646" stroke="#a86c2b" stroke-width="3">
+      <path d="M-72 -4 q28 -34 62 -6 q-30 -6 -62 6 z"/>
+      <path d="M-16 6 q30 -36 66 -8 q-32 -6 -66 8 z"/>
+      <path d="M-52 20 q32 -30 68 -4 q-34 -4 -68 4 z"/>
+    </g>
+    <g fill="#f0c377" opacity="0.75">
+      <path d="M-64 -6 q22 -22 46 -6 q-24 -2 -46 6 z"/>
+      <path d="M-8 4 q24 -24 50 -8 q-26 -2 -50 8 z"/>
+    </g>
+  </g>
+
+  <!-- mate con bombilla -->
+  <g transform="translate(400,286)">
+    <ellipse cx="0" cy="120" rx="76" ry="20" fill="#000" opacity="0.18"/>
+    <path d="M-56 14 q56 -26 112 0 l-16 88 q-40 22 -80 0 z" fill="url(#porongo)"/>
+    <path d="M-34 30 q10 60 6 74 q-14 -8 -18 -70 z" fill="#c08a51" opacity="0.35"/>
+    <ellipse cx="0" cy="14" rx="56" ry="16" fill="#3f2411"/>
+    <ellipse cx="0" cy="12" rx="43" ry="12" fill="#8d9c46"/>
+    <path d="M-40 12 q22 -22 46 -12 q-24 10 -46 12 z" fill="#a8b45c"/>
+    <path d="M14 8 q20 4 26 10 q-24 6 -34 -2 z" fill="#6f7d35"/>
+    <ellipse cx="0" cy="104" rx="40" ry="12" fill="#33200f"/>
+    <g transform="rotate(16 22 0)">
+      <rect x="16" y="-96" width="11" height="110" rx="5" fill="#c4c9cf"/>
+      <rect x="16" y="-96" width="4"  height="110" fill="#eef1f4" opacity="0.7"/>
+      <ellipse cx="21" cy="-98" rx="16" ry="7" fill="#aeb5bd"/>
+      <ellipse cx="21" cy="-100" rx="12" ry="5" fill="#d7dce1"/>
+    </g>
+  </g>
+
+  <!-- termo -->
+  <g transform="translate(600,150)">
+    <ellipse cx="52" cy="252" rx="66" ry="18" fill="#000" opacity="0.18"/>
+    <rect x="4"  y="46"  width="96" height="204" rx="16" fill="url(#termo)"/>
+    <rect x="10" y="24"  width="84" height="30"  rx="10" fill="#13372a"/>
+    <rect x="24" y="0"   width="56" height="30"  rx="10" fill="#1d4a39"/>
+    <rect x="4"  y="104" width="96" height="62"  fill="#ece3d1"/>
+    <rect x="4"  y="104" width="96" height="10"  fill="#cbbfa6"/>
+    <rect x="4"  y="156" width="96" height="10"  fill="#cbbfa6"/>
+    <g fill="#2b6a51" opacity="0.55">
+      <rect x="20" y="122" width="64" height="8" rx="4"/>
+      <rect x="20" y="138" width="44" height="8" rx="4"/>
+    </g>
+    <rect x="10" y="60" width="14" height="180" rx="7" fill="#ffffff" opacity="0.18"/>
+    <rect x="4"  y="236" width="96" height="14" rx="6" fill="#12352a"/>
+  </g>
+
+</svg>

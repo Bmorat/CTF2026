@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sanitizado PARCIAL. Se removio el bloque GPS a pedido del usuario.
+  El resto del bloque de camara quedo tal cual.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+
+  <metadata id="bloque-camara">
+    <camara>
+      <Make>samsung</Make>
+      <Model>SM-A546E</Model>
+      <Software>Editor de fotos 3.1 (recorte + borrado de ubicacion)</Software>
+      <DateTimeOriginal>2026:07:19 17:36:22</DateTimeOriginal>
+      <OffsetTime>-03:00</OffsetTime>
+      <ExposureTime>1/500</ExposureTime>
+      <FNumber>2.2</FNumber>
+      <ISOSpeedRatings>50</ISOSpeedRatings>
+      <GPSImgDirection>REMOVIDO POR EL USUARIO</GPSImgDirection>
+      <ImageDescription>desde la tribuna de arriba, atras del arco</ImageDescription>
+      <UserComment>ojo: sacar ubicacion antes de subir. la torre se ve igual, no hay caso</UserComment>
+    </camara>
+  </metadata>
+
+  <title>Fotografia sin ubicacion declarada</title>
+  <desc>Vista de un estadio de futbol desde una tribuna alta, con una torre de hormigon escalonada al fondo.</desc>
+
+  <defs>
+    <linearGradient id="cielo2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#7fb2e0"/>
+      <stop offset="70%"  stop-color="#cfe0ea"/>
+      <stop offset="100%" stop-color="#e8ecec"/>
+    </linearGradient>
+    <linearGradient id="cesped" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#3f8f4a"/>
+      <stop offset="100%" stop-color="#2f7a3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="560" fill="url(#cielo2)"/>
+
+  <!-- nubes finas -->
+  <g fill="#ffffff" opacity="0.5">
+    <ellipse cx="180" cy="70" rx="90" ry="14"/>
+    <ellipse cx="240" cy="60" rx="55" ry="10"/>
+    <ellipse cx="740" cy="96" rx="105" ry="13"/>
+  </g>
+
+  <!-- TORRE ESCALONADA DE HORMIGON (rasgo identificable) -->
+  <g transform="translate(408,60)">
+    <!-- cuerpo principal en escalones art deco -->
+    <rect x="26" y="0"   width="30" height="26" fill="#e6e2d8" stroke="#c9c3b4"/>
+    <rect x="18" y="26"  width="46" height="30" fill="#ded9cd" stroke="#c2bcac"/>
+    <rect x="10" y="56"  width="62" height="34" fill="#e6e2d8" stroke="#c9c3b4"/>
+    <rect x="2"  y="90"  width="78" height="38" fill="#dcd7cb" stroke="#c2bcac"/>
+    <rect x="-6" y="128" width="94" height="42" fill="#e6e2d8" stroke="#c9c3b4"/>
+    <!-- ventanas verticales angostas -->
+    <g fill="#8c9096">
+      <rect x="34" y="6"   width="5" height="16"/>
+      <rect x="44" y="6"   width="5" height="16"/>
+      <rect x="28" y="32"  width="5" height="20"/>
+      <rect x="40" y="32"  width="5" height="20"/>
+      <rect x="52" y="32"  width="5" height="20"/>
+      <rect x="20" y="62"  width="5" height="24"/>
+      <rect x="34" y="62"  width="5" height="24"/>
+      <rect x="48" y="62"  width="5" height="24"/>
+      <rect x="62" y="62"  width="5" height="24"/>
+      <rect x="10" y="96"  width="6" height="26"/>
+      <rect x="28" y="96"  width="6" height="26"/>
+      <rect x="48" y="96"  width="6" height="26"/>
+      <rect x="66" y="96"  width="6" height="26"/>
+    </g>
+    <!-- placa conmemorativa al pie de la torre (legible con zoom) -->
+    <rect x="20" y="140" width="42" height="16" fill="#b9a86a" stroke="#8d7f4d"/>
+    <text x="41" y="152" font-family="Georgia, serif" font-size="10" font-weight="bold"
+          text-anchor="middle" fill="#3a3320">1930</text>
+    <!-- mastil -->
+    <line x1="41" y1="-22" x2="41" y2="0" stroke="#9a958a" stroke-width="3"/>
+    <path d="M41 -22 l22 6 -22 6 z" fill="#75aadb"/>
+  </g>
+
+  <!-- techo curvo de la tribuna del fondo -->
+  <path d="M60 236 q390 -70 780 0 l0 22 q-390 -68 -780 0 z" fill="#cfd3d6" stroke="#a9aeb2"/>
+  <path d="M60 258 q390 -68 780 0 l0 16 q-390 -66 -780 0 z" fill="#b7bcc0"/>
+
+  <!-- tribuna del fondo con publico -->
+  <rect x="60" y="272" width="780" height="70" fill="#8d95a0"/>
+  <g fill="#5c6470" opacity="0.85">
+    <rect x="60" y="286" width="780" height="4"/>
+    <rect x="60" y="302" width="780" height="4"/>
+    <rect x="60" y="318" width="780" height="4"/>
+  </g>
+  <g opacity="0.9">
+    <g fill="#dfe4ea"><circle cx="120" cy="282" r="3"/><circle cx="180" cy="298" r="3"/><circle cx="300" cy="284" r="3"/><circle cx="420" cy="300" r="3"/><circle cx="560" cy="286" r="3"/><circle cx="700" cy="298" r="3"/><circle cx="790" cy="284" r="3"/></g>
+    <g fill="#f0d24c"><circle cx="160" cy="314" r="3"/><circle cx="340" cy="316" r="3"/><circle cx="520" cy="314" r="3"/><circle cx="660" cy="316" r="3"/></g>
+    <g fill="#3d5a9c"><circle cx="240" cy="288" r="3"/><circle cx="470" cy="286" r="3"/><circle cx="620" cy="314" r="3"/><circle cx="760" cy="300" r="3"/></g>
+  </g>
+
+  <!-- cartel parcialmente tapado en la tribuna -->
+  <rect x="330" y="326" width="230" height="20" fill="#1f2a3a"/>
+  <text x="445" y="341" font-family="Arial, sans-serif" font-size="14" letter-spacing="3"
+        text-anchor="middle" fill="#e8edf3">TRIB. OL</text>
+  <rect x="470" y="322" width="120" height="28" fill="#8d95a0"/>
+
+  <!-- campo de juego en perspectiva -->
+  <path d="M40 560 L120 350 L780 350 L860 560 Z" fill="url(#cesped)"/>
+  <g stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.9">
+    <path d="M126 366 L774 366"/>
+    <path d="M60 520 L840 520"/>
+    <path d="M76 470 L824 470"/>
+    <ellipse cx="450" cy="470" rx="86" ry="30"/>
+    <path d="M450 350 L450 560"/>
+    <path d="M300 366 L600 366 L610 400 L290 400 Z"/>
+  </g>
+  <g stroke="#f2f4f7" stroke-width="3" fill="none">
+    <path d="M372 350 L372 336 L528 336 L528 350"/>
+  </g>
+
+  <!-- jugadores -->
+  <g fill="#f0d24c" stroke="#333" stroke-width="0.6">
+    <circle cx="380" cy="440" r="5"/><circle cx="520" cy="418" r="5"/><circle cx="452" cy="490" r="5"/>
+  </g>
+  <g fill="#2f3a4a" stroke="#fff" stroke-width="0.6">
+    <circle cx="410" cy="470" r="5"/><circle cx="560" cy="452" r="5"/><circle cx="330" cy="404" r="5"/>
+  </g>
+  <circle cx="466" cy="476" r="4" fill="#fff" stroke="#333"/>
+
+  <!-- barandas de la tribuna desde donde se saca la foto -->
+  <g stroke="#5a6472" stroke-width="7" opacity="0.75">
+    <line x1="0" y1="548" x2="900" y2="548"/>
+  </g>
+  <g stroke="#5a6472" stroke-width="5" opacity="0.6">
+    <line x1="90"  y1="548" x2="90"  y2="560"/>
+    <line x1="330" y1="548" x2="330" y2="560"/>
+    <line x1="570" y1="548" x2="570" y2="560"/>
+    <line x1="810" y1="548" x2="810" y2="560"/>
+  </g>
+
+</svg>

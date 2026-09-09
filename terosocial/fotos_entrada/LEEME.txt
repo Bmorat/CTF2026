@@ -1,0 +1,92 @@
+===============================================================
+ FOTOS PROPIAS PARA TEROSOCIAL
+ Dejá acá tus fotos y avisame. Yo hago el resto.
+===============================================================
+
+
+1. CÓMO NOMBRARLAS
+------------------
+
+   <tema>_<numero>.jpg
+
+   Ejemplos:  electro_10.jpg   herramienta_8.jpg   hogar_1.jpg
+
+   El nombre define a qué tema pertenece la foto. Podés usar los
+   temas que ya existen:
+
+     rambla  cancha  mate  mascota  bici  ave  comida  ruta  pesca
+     murga   auto    casa  herramienta  electro  campo  ciudad
+     costa   feria
+
+   Si tu foto no entra en ninguno, INVENTÁ UN TEMA NUEVO. Por
+   ejemplo: mueble_1.jpg, ropa_1.jpg, juguete_1.jpg, libro_1.jpg,
+   cocina_1.jpg, jardin_1.jpg. Funciona igual.
+
+   Si un tema ya tiene fotos, seguí la numeración desde donde va
+   (mirá web\media\fotos\ para ver cuál es el último).
+
+
+2. QUÉ SACAR
+------------
+
+   Lo que más falta son OBJETOS SUELTOS, del tipo que alguien
+   fotografía para vender: un ventilador, una silla, una caja de
+   herramientas, una bici apoyada, un mueble, ropa doblada, una
+   olla, un televisor, una caña de pescar, un par de zapatos.
+
+   Fondo cualquiera. Cuanto más "foto de marketplace de verdad"
+   (mal encuadrada, con luz de living, sobre la cama), mejor.
+
+   Además, 4 o 5 fotos CON ALGO LEGIBLE QUE NO SIRVA PARA NADA:
+   una etiqueta, un cartel de precios, un papel con una lista,
+   la pantalla de un microondas, una caja con número de serie.
+   Estas son importantes: son las que hacen que revisar cada foto
+   cueste, porque enseñan que hay que mirar y que casi siempre no
+   hay nada.
+
+   Y la del post-it, que es una sola.
+
+
+3. LA DEL POST-IT
+-----------------
+
+   Tiene que ser LEGIBLE HACIENDO ZOOM pero INVISIBLE DE UN
+   VISTAZO. Si se lee en la miniatura, el ejercicio dura diez
+   segundos.
+
+   - Monitor a media distancia, no en primer plano.
+   - El post-it chico dentro del encuadre.
+   - Sacala con la mejor calidad que puedas.
+
+   Esa foto se procesa aparte, con más resolución:
+
+     powershell -ExecutionPolicy Bypass -File .\herramientas\preparar_fotos_propias.ps1 -Ancho 1600
+
+
+4. ANTES DE PUBLICARLAS: LOS METADATOS
+--------------------------------------
+
+   Tu teléfono le mete a cada foto el modelo, la fecha y muchas
+   veces LAS COORDENADAS DE DÓNDE LA SACASTE.
+
+   Vas a poner a un grupo entrenado en OSINT a mirar estas fotos
+   con lupa. Si subís una de tu casa con el GPS puesto, se lo
+   estás regalando.
+
+   Para ver qué traen, sin tocar nada:
+
+     powershell -ExecutionPolicy Bypass -File .\herramientas\preparar_fotos_propias.ps1 -SoloInspeccionar
+
+   Te marca en rojo las que tienen GPS. El procesamiento normal
+   borra todos los metadatos.
+
+
+5. CUANDO TERMINES
+------------------
+
+   Avisame y yo:
+     - las proceso y las indexo
+     - reasigno los avisos del marketplace para que usen las tuyas
+       en vez de las de banco
+     - agrego la atribución "foto propia" en CREDITOS.md
+     - armo el aviso del monitor con su comentario

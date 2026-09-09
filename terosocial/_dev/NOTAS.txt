@@ -1,0 +1,54 @@
+===============================================================
+ TeroSocial - carpeta de trabajo del equipo de plataforma
+ NO SUBIR A PRODUCCION. (Sigue subida. Ver PLT-2291.)
+===============================================================
+
+Esto es lo que quedo del ultimo sprint. Nadie lo limpio.
+
+
+ESTADO DE LOS TICKETS
+---------------------
+
+[PLT-2288] Sanitizador de metadatos caido           abierto desde 2026-03-01
+   Las imagenes se guardan tal cual llegan del telefono. El aviso de
+   mantenimiento del login sigue publicado desde el 14/03.
+
+[PLT-2291] Autenticacion en /respaldo/, /api/ y /_dev/   abierto desde 2026-03-04
+   Las tres carpetas estan solo desindexadas por robots.txt. Cualquiera
+   que lea ese archivo sabe donde mirar. Reportado cuatro veces.
+   Agrego: el rotador de logs empezo a escribir accesos_AAAA-MM.log
+   dentro de /respaldo/. Ahora tambien hay IPs ahi.
+
+[PLT-2301] Perfiles archivados accesibles por URL         en discusion
+   Las cuentas dadas de baja salen del buscador pero responden igual
+   si se conoce el alias exacto.
+
+[PLT-2310] Volcado de cuentas con datos de registro       abierto
+   usuarios.json expone correo, telefono parcial, IP y huella de
+   dispositivo de las 80 cuentas.
+
+[PLT-2333] El bot de noticias duplica publicaciones       abierto
+   El control de duplicados compara el titulo despues de normalizar,
+   pero el republicado le agrega un prefijo y no matchea. Publica dos
+   o tres veces lo mismo. Baja prioridad segun producto.
+
+[PLT-2340] Buscador no indexa comentarios                 no se va a hacer
+   Producto dice que reindexar todo el historico es caro y que nadie
+   se queja. Queda asi. Tampoco indexa nada de mas de un ano.
+
+
+NOTAS SUELTAS
+-------------
+
+- El limite de 20 resultados por tipo es del motor viejo. Cambiarlo
+  requiere tocar el indice y nadie se anima.
+
+- Las cuentas de servicio (soporte, moderacion, el bot) entran desde
+  10.14.2.9, que es la red interna. Si aparece otra cosa ahi, avisar.
+
+- Recordatorio para el pasaje: revisar que no queden tokens de
+  depuracion en los comentarios del HTML. Ya paso dos veces.
+
+- Fabian: deje una copia de la base de perfiles vieja en esta carpeta
+  para comparar contra la nueva. Despues la borro.
+  (No la borro.)

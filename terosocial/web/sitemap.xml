@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mapa del sitio generado automaticamente. Solo contenido publico e indexable. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url><loc>/index.html</loc><changefreq>hourly</changefreq><priority>1.0</priority></url>
+  <url><loc>/grupos.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>/feria.html</loc><changefreq>hourly</changefreq><priority>0.9</priority></url>
+  <url><loc>/eventos.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>/buscar.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>/terminos.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+
+  <url><loc>/grupo.html?g=laposta</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=vecinos-cerro</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=comprovendo</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=pesca</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=murgas</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=mateando</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=ruta5</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=aves</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=cx-radio</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=docentes</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=mascotas</loc><priority>0.7</priority></url>
+  <url><loc>/grupo.html?g=cocina</loc><priority>0.7</priority></url>
+
+  <url><loc>/perfil.html?u=charrua_libre</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=mateamargo_87</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=sofi.tortasfritas</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=el_tero_viajero</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=laura.rambla</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=murga_la_reculada</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=dj_candombe</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=pescador_delaplata</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=soporte_terosocial</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=dona_elsa_47</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=taxi_cx_1420</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=caro.veterinaria</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=elpibe.delcerro</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=panaderia_dosorillas</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=ing.rossi</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=nurse_valentina</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=elrusodelquiosco</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=marce.peluquera</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=profe_hernandez_hist</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=bomberito_ruiz</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=tatu.ink.mvd</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=contadora.gimenez</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=elabuelo_radioCX8</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=feriante_tristan</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=guarda_101</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=astro.mvd</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=pastelera.zuni</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=sec.gremio.docente</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=pintor_rodri</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=mama_de_tres_mvd</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=hacker_del_prado</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=remis_nocturno_mvd</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=libreria_elsurco</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=coleccionista_cx</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=basquet_aguada_fan</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=vecina.malvin.rosa</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=dj.pirata.fm</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=productor_durazno</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=apicultor_florida</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=camionero_ruta5</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=rivera_frontera</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=artesano_piriapolis</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=salvavidas_rocha</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=agronomo_paysandu</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=melo_ferretero</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=estudiante_utec</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=colonia_guia_turismo</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=tambero_sanjose</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=artigas_citrus</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=maldonado_inmobiliaria</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=treintaytres_jinete</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=laspiedras_mecanico</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=costa_dorada_vecina</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=pescador_tacuarembo</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=chef_carmelo</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=young_bicicleteria</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=ojoscerrados_uy</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=investigador_montevideo</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=la_verdad_del_norte</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=cielo_raro_uy</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=escepticouy</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=agua_pura_uy</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=patriota_oriental_1811</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=mama_alerta_uy</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=portal_elmirador</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=municipio_costanorte</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=clima_uy_alertas</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=moderacion_terosocial</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=tero_bot_noticias</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=mateamargo87</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=charrua.libre</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=tero_anon_2018</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=el.tero.viajero</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=laura_rambla</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=ojos_cerrados_uy</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=esceptico_uy</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=dona_elsa_74</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=mama_alerta_mvd</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=hacker.del.prado</loc><priority>0.5</priority></url>
+
+  <url><loc>/perfil.html?u=verduleria_la_yapa</loc><priority>0.5</priority></url>
+  <url><loc>/perfil.html?u=heladeria_polo_sur</loc><priority>0.5</priority></url>
+
+  <!--
+    Excluidas del mapa por politica de la plataforma:
+      - perfiles en estado BAJA_VOLUNTARIA (siguen accesibles por URL directa)
+      - la cola de moderacion (accesible, pero no se difunde)
+      - /respaldo/ y /api/ (ver robots.txt)
+  -->
+
+</urlset>

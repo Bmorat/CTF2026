@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+
+  <metadata id="bloque-camara">
+    <camara>
+      <Make>motorola</Make>
+      <Model>moto g23</Model>
+      <Software>Camara 8.2.4</Software>
+      <DateTimeOriginal>2026:06:09 12:03:57</DateTimeOriginal>
+      <OffsetTime>-03:00</OffsetTime>
+      <Orientation>1</Orientation>
+      <ExposureTime>1/90</ExposureTime>
+      <FNumber>1.8</FNumber>
+      <ISOSpeedRatings>250</ISOSpeedRatings>
+      <FocalLength>4.4 mm</FocalLength>
+      <Flash>disparado</Flash>
+    </camara>
+  </metadata>
+
+  <title>Herramientas sobre el banco de trabajo</title>
+  <desc>Ilustracion plana de un martillo, una pinza y dos destornilladores apoyados sobre un banco de trabajo de madera, con tornillos sueltos y una tabla perforada de fondo.</desc>
+
+  <defs>
+    <linearGradient id="tablero" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#c99a63"/>
+      <stop offset="100%" stop-color="#a2743f"/>
+    </linearGradient>
+    <linearGradient id="banco" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#a97742"/>
+      <stop offset="45%"  stop-color="#8d5f30"/>
+      <stop offset="100%" stop-color="#6b4522"/>
+    </linearGradient>
+    <linearGradient id="acero" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#e2e6ea"/>
+      <stop offset="45%"  stop-color="#aeb5bc"/>
+      <stop offset="100%" stop-color="#767d85"/>
+    </linearGradient>
+    <linearGradient id="mango" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#d8622f"/>
+      <stop offset="100%" stop-color="#9c3d19"/>
+    </linearGradient>
+    <radialGradient id="lampara" cx="50%" cy="0%" r="80%">
+      <stop offset="0%"   stop-color="#fff2cc" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fff2cc" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="500" fill="url(#tablero)"/>
+
+  <!-- tabla perforada -->
+  <g fill="#8a6234" opacity="0.55">
+    <circle cx="60"  cy="40"  r="7"/><circle cx="140" cy="40"  r="7"/><circle cx="220" cy="40"  r="7"/>
+    <circle cx="300" cy="40"  r="7"/><circle cx="380" cy="40"  r="7"/><circle cx="460" cy="40"  r="7"/>
+    <circle cx="540" cy="40"  r="7"/><circle cx="620" cy="40"  r="7"/><circle cx="700" cy="40"  r="7"/>
+    <circle cx="780" cy="40"  r="7"/><circle cx="860" cy="40"  r="7"/>
+    <circle cx="60"  cy="120" r="7"/><circle cx="140" cy="120" r="7"/><circle cx="220" cy="120" r="7"/>
+    <circle cx="300" cy="120" r="7"/><circle cx="380" cy="120" r="7"/><circle cx="460" cy="120" r="7"/>
+    <circle cx="540" cy="120" r="7"/><circle cx="620" cy="120" r="7"/><circle cx="700" cy="120" r="7"/>
+    <circle cx="780" cy="120" r="7"/><circle cx="860" cy="120" r="7"/>
+  </g>
+
+  <!-- llave colgada del tablero -->
+  <g transform="translate(748,30) rotate(8)">
+    <rect x="0" y="0" width="18" height="130" rx="9" fill="url(#acero)"/>
+    <path d="M-14 -6 q23 -22 46 0 q-10 20 -46 0 z" fill="#b9c0c7"/>
+    <path d="M-12 118 q21 -18 42 0 q-8 18 -42 0 z" fill="#b9c0c7"/>
+  </g>
+
+  <rect x="0" y="176" width="900" height="16" fill="#7a5228"/>
+
+  <!-- banco de trabajo -->
+  <rect x="0" y="192" width="900" height="308" fill="url(#banco)"/>
+  <rect width="900" height="500" fill="url(#lampara)"/>
+  <g stroke="#5f3d1c" stroke-width="4" opacity="0.55">
+    <line x1="0" y1="256" x2="900" y2="256"/>
+    <line x1="0" y1="330" x2="900" y2="330"/>
+    <line x1="0" y1="404" x2="900" y2="404"/>
+    <line x1="0" y1="464" x2="900" y2="464"/>
+  </g>
+  <g fill="#5f3d1c" opacity="0.35">
+    <ellipse cx="180" cy="300" rx="60" ry="10"/>
+    <ellipse cx="620" cy="370" rx="80" ry="12"/>
+  </g>
+
+  <!-- martillo -->
+  <g transform="translate(150,236) rotate(-12)">
+    <rect x="0" y="60" width="26" height="220" rx="12" fill="#000" opacity="0.18" transform="translate(10,12)"/>
+    <rect x="0" y="60" width="26" height="220" rx="12" fill="url(#mango)"/>
+    <rect x="0" y="200" width="26" height="80" rx="12" fill="#7f3011"/>
+    <path d="M-46 6 q46 -22 92 0 l0 46 q-46 20 -92 0 z" fill="url(#acero)"/>
+    <path d="M-46 24 q-40 -8 -54 20 q-6 20 12 26 q26 -16 42 -22 z" fill="#8f979f"/>
+    <rect x="-8" y="46" width="42" height="26" rx="8" fill="#6d757d"/>
+  </g>
+
+  <!-- pinza -->
+  <g transform="translate(470,214) rotate(14)">
+    <g fill="#000" opacity="0.16" transform="translate(10,12)">
+      <rect x="-10" y="90" width="34" height="160" rx="16"/>
+      <rect x="34"  y="90" width="34" height="160" rx="16"/>
+    </g>
+    <path d="M4 0 q22 -18 44 6 l14 96 -30 8 z" fill="url(#acero)"/>
+    <path d="M56 6 q22 22 6 44 l-52 62 -22 -20 z" fill="#9aa2aa"/>
+    <rect x="-14" y="96" width="36" height="164" rx="18" fill="#c8452c"/>
+    <rect x="34"  y="96" width="36" height="164" rx="18" fill="#c8452c"/>
+    <rect x="-8"  y="112" width="24" height="130" rx="12" fill="#e0674a" opacity="0.7"/>
+    <rect x="40"  y="112" width="24" height="130" rx="12" fill="#e0674a" opacity="0.7"/>
+    <circle cx="28" cy="86" r="14" fill="#6d757d"/>
+  </g>
+
+  <!-- destornillador plano -->
+  <g transform="translate(600,410) rotate(-6)">
+    <rect x="0" y="0" width="230" height="26" rx="13" fill="#000" opacity="0.16" transform="translate(8,10)"/>
+    <rect x="0" y="0" width="130" height="26" rx="13" fill="#e0a52c"/>
+    <rect x="0" y="6" width="130" height="8"  rx="4"  fill="#f4c968" opacity="0.8"/>
+    <rect x="126" y="7" width="90" height="12" rx="6" fill="url(#acero)"/>
+    <rect x="212" y="4" width="26" height="18" rx="3" fill="#8f979f"/>
+  </g>
+
+  <!-- destornillador phillips -->
+  <g transform="translate(566,462) rotate(-6)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="#2f6f9c"/>
+    <rect x="0" y="5" width="120" height="8"  rx="4"  fill="#4b93c1" opacity="0.8"/>
+    <rect x="116" y="6" width="86" height="11" rx="5" fill="url(#acero)"/>
+    <path d="M200 4 l22 8 -22 8 z" fill="#8f979f"/>
+  </g>
+
+  <!-- tornillos y tuercas -->
+  <g>
+    <g transform="translate(300,430)">
+      <rect x="0" y="0" width="70" height="12" rx="6" fill="#9aa2aa"/>
+      <circle cx="0" cy="6" r="12" fill="#b9c0c7"/>
+    </g>
+    <g transform="translate(360,468)">
+      <rect x="0" y="0" width="56" height="10" rx="5" fill="#9aa2aa"/>
+      <circle cx="0" cy="5" r="10" fill="#b9c0c7"/>
+    </g>
+    <g fill="#8f979f">
+      <path d="M242 458 l16 -9 16 9 0 18 -16 9 -16 -9 z"/>
+      <path d="M196 424 l14 -8 14 8 0 16 -14 8 -14 -8 z"/>
+    </g>
+  </g>
+
+  <!-- metro -->
+  <g transform="translate(760,236)">
+    <rect x="0" y="0" width="96" height="72" rx="12" fill="#d8b22c"/>
+    <rect x="10" y="10" width="76" height="34" rx="8" fill="#3c3a36"/>
+    <rect x="18" y="18" width="60" height="18" rx="4" fill="#e8e2d0"/>
+    <rect x="0" y="56" width="96" height="16" rx="6" fill="#a8871c"/>
+  </g>
+
+</svg>

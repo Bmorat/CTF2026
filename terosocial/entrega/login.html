@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es-UY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingresar · TeroSocial</title>
+<meta name="description" content="TeroSocial, la red de los barrios, los pueblos y la gente que se conoce.">
+<meta name="generator" content="TeroSocial Engine 3.0">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+</head>
+<body data-vista="login">
+
+<main class="portal">
+
+  <section class="portal-izq">
+    <div class="portal-marca">
+      <span class="logo-disco"><span style="width:14px;height:14px;border-radius:50%;background:#e4e0d6"></span></span>
+      <span><b>tero</b><i>social</i></span>
+    </div>
+
+    <div class="portal-fondo">
+      <h1 class="portal-tit">La red de los barrios, los pueblos y la gente que se conoce.</h1>
+      <p class="portal-bajada">Grupos, La Feria y eventos. Sin algoritmo: las publicaciones aparecen
+      por fecha, de la más nueva a la más vieja, como debe ser.</p>
+
+      <div class="portal-cifras">
+        <div class="cifra"><b>187.402</b><span>cuentas</span></div>
+        <div class="cifra"><b>19</b><span>departamentos</span></div>
+        <div class="cifra"><b>2018</b><span>en línea desde</span></div>
+      </div>
+
+      <div class="portal-clima">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8fb0c4" stroke-width="1.7" aria-hidden="true">
+          <path d="M6 13a4 4 0 0 1 .6-8 5.5 5.5 0 0 1 10.5 1.4A3.5 3.5 0 0 1 17 13z"/>
+          <path d="M8 16.5l-1 2.5M12 16.5l-1 2.5M16 16.5l-1 2.5"/>
+        </svg>
+        Montevideo · garúa · 11°
+      </div>
+    </div>
+  </section>
+
+  <section class="portal-der">
+
+    <div class="portal-pestanas">
+      <span class="activa" id="tab-ingresar">Ingresar</span>
+      <span id="tab-crear">Crear cuenta</span>
+    </div>
+
+    <!-- Ingresar -->
+    <div id="panel-ingresar">
+      <h2 class="portal-h2">Entrá a tu cuenta</h2>
+      <p class="portal-sub">Sin cuenta se ve el muro público, pero no mucho más.</p>
+
+      <form id="form-login" autocomplete="off" style="margin-top:22px">
+        <label class="campo-et" for="usuario">Usuario o correo</label>
+        <input class="campo" type="text" id="usuario" name="usuario" autocomplete="off">
+
+        <label class="campo-et" for="clave">Contraseña</label>
+        <div class="campo-clave">
+          <input class="campo" type="password" id="clave" name="clave" autocomplete="off">
+          <button type="button" class="btn-texto" id="ver-clave">Mostrar</button>
+        </div>
+
+        <label class="campo-check">
+          <input type="checkbox" id="recordar" checked>
+          Mantener la sesión abierta en este equipo
+        </label>
+
+        <div id="error-login" class="error-login" hidden></div>
+        <button class="boton boton-ancho" type="submit">Ingresar</button>
+      </form>
+
+      <div class="portal-o">o</div>
+
+      <div class="aviso-sistema">
+        <strong>Aviso de mantenimiento</strong><br>
+        El sanitizador de metadatos de las fotos está temporalmente fuera de servicio.
+        Publicado el 14/03/2026. <a href="terminos.html">Más información</a>
+      </div>
+
+      <div class="portal-pie">
+        ¿Solo querés mirar? Podés <a href="index.html">entrar sin iniciar sesión</a>.
+        Vas a ver el muro público, pero no los grupos cerrados ni los datos de contacto.
+      </div>
+      <div class="portal-olvide" style="margin-top:12px">
+        <a href="terminos.html">¿Olvidó su contraseña?</a>
+      </div>
+    </div>
+
+    <!-- Crear cuenta -->
+    <div id="panel-crear" hidden>
+      <h2 class="portal-h2">Creá tu cuenta</h2>
+      <p class="portal-sub">Es gratis y lleva un minuto.</p>
+
+      <div style="margin-top:20px">
+        <div class="campo-fila">
+          <div><label class="campo-et">Nombre</label><input class="campo" type="text" placeholder="Nombre" disabled></div>
+          <div><label class="campo-et">Apellido</label><input class="campo" type="text" placeholder="Apellido" disabled></div>
+        </div>
+
+        <label class="campo-et">Correo electrónico</label>
+        <input class="campo" type="text" placeholder="ejemplo@correo.com" disabled>
+
+        <div class="campo-fila">
+          <div><label class="campo-et">Departamento</label>
+            <select class="campo" disabled><option>Montevideo</option></select></div>
+          <div><label class="campo-et">Fecha de nacimiento</label>
+            <input class="campo" type="text" placeholder="dd/mm/aaaa" disabled></div>
+        </div>
+
+        <div class="aviso-privacidad-registro" style="display:flex;gap:10px;padding:10px 12px;background:#eee3d0;border:1px solid #ddcdb0;border-radius:6px;font-size:12.5px;line-height:1.55;color:#8a6528;margin-bottom:14px">
+          <span style="font-size:15px;flex:none;margin-top:1px">⚠</span>
+          <span>
+            <strong>Datos visibles por defecto:</strong> tu <b>correo electrónico</b> y tu <b>departamento</b>
+            quedan visibles para todos los usuarios de la plataforma. Podés cambiarlos en
+            <a href="configuracion.html">Configuración</a> luego del registro. Al registrarte aceptás los
+            <a href="terminos.html">Términos</a> y la <a href="terminos.html">Política de Privacidad</a>.
+          </span>
+        </div>
+
+        <button class="boton boton-ancho boton-verde" type="button" id="btn-registro">Registrarme</button>
+        <div id="aviso-registro" class="error-login" style="margin-top:12px" hidden>
+          El registro de cuentas nuevas está suspendido desde el 14/03/2026 por mantenimiento.
+        </div>
+      </div>
+
+      <div class="portal-pie">
+        ¿Ya tenés cuenta? <a href="#" id="ir-ingresar">Entrá por acá</a>.
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<script src="js/sha256.js"></script>
+<script src="js/credenciales.js"></script>
+<script src="js/sesion.js"></script>
+<script src="js/datos_usuarios.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // Si ya hay sesión, no tiene sentido quedarse acá.
+  if (window.SESION && SESION.activa()) location.href = "index.html";
+
+  var form = document.getElementById("form-login");
+  var caja = document.getElementById("error-login");
+  var fallos = 0;
+
+  // Pestañas
+  var tabIn = document.getElementById("tab-ingresar");
+  var tabCr = document.getElementById("tab-crear");
+  var panIn = document.getElementById("panel-ingresar");
+  var panCr = document.getElementById("panel-crear");
+
+  function mostrar(cual) {
+    var esIngresar = cual === "ingresar";
+    panIn.hidden = !esIngresar;
+    panCr.hidden = esIngresar;
+    tabIn.className = esIngresar ? "activa" : "";
+    tabCr.className = esIngresar ? "" : "activa";
+  }
+  tabIn.addEventListener("click", function () { mostrar("ingresar"); });
+  tabCr.addEventListener("click", function () { mostrar("crear"); });
+  document.getElementById("ir-ingresar").addEventListener("click", function (e) {
+    e.preventDefault();
+    mostrar("ingresar");
+  });
+
+  document.getElementById("ver-clave").addEventListener("click", function () {
+    var c = document.getElementById("clave");
+    var mostrando = c.type === "text";
+    c.type = mostrando ? "password" : "text";
+    this.textContent = mostrando ? "Mostrar" : "Ocultar";
+  });
+
+  document.getElementById("btn-registro").addEventListener("click", function () {
+    document.getElementById("aviso-registro").hidden = false;
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var u = document.getElementById("usuario").value;
+    var c = document.getElementById("clave").value;
+
+    // Antes eran 5. Como la contraseña se transcribe de una foto y hay
+    // caracteres que se confunden (1 con l, 0 con O), probar variantes es
+    // un intento legítimo y no debería trabar a nadie.
+    if (fallos >= 10) {
+      caja.hidden = false;
+      caja.textContent = (window.MENSAJES_LOGIN || {}).bloqueo || "Demasiados intentos.";
+      return;
+    }
+
+    var r = SESION.intentar(u, c);
+    if (r.ok) {
+      location.href = "index.html";
+      return;
+    }
+    fallos++;
+    caja.hidden = false;
+    caja.textContent = r.motivo;
+  });
+})();
+</script>
+</body>
+</html>

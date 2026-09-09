@@ -1,0 +1,198 @@
+{
+  "_meta": {
+    "generado_por": "terosocial-backup-agent/1.9",
+    "generado_utc": "2026-08-03T05:00:11Z",
+    "alcance": "publicaciones_eliminadas + telemetria_publicacion + medios_huerfanos",
+    "retencion_dias": 400,
+    "aviso": "Contiene registros eliminados por los usuarios. Retenidos por politica interna."
+  },
+
+  "publicaciones_eliminadas": [
+    {
+      "id": 106,
+      "autor": "charrua_libre",
+      "creado_utc": "2026-07-05T02:31:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-07-05T02:39:00Z",
+      "texto": "Se me escapo una foto sin limpiar en el perfil viejo. Ya la baje. Igual el que sepa mirar un archivo por dentro ya la tiene."
+    },
+    {
+      "id": 107,
+      "autor": "charrua_libre",
+      "creado_utc": "2026-06-21T23:12:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-06-21T23:14:00Z",
+      "texto": "Los respaldos de esta plataforma son un chiste. Estan colgados de una carpeta que solo esconden en el robots. Cualquiera que lea ese archivo entra."
+    },
+    {
+      "id": 108,
+      "autor": "charrua_libre",
+      "creado_utc": "2026-05-19T15:47:00Z",
+      "zona_dispositivo": "+02:00",
+      "eliminado_utc": "2026-05-19T15:51:00Z",
+      "texto": "Aca el desayuno es un asco y el cafe peor. Nueve horas de vuelo para esto. Borro esto en cinco minutos, no me sirve que sepan que no estoy en el pais."
+    },
+    {
+      "id": 109,
+      "autor": "charrua_libre",
+      "creado_utc": "2026-04-02T01:05:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-04-02T01:20:00Z",
+      "texto": "Nota para mi: no volver a entrar a las dos cuentas desde la misma conexion. Se me mezclan las sesiones."
+    },
+    {
+      "id": 110,
+      "autor": "charrua_libre",
+      "creado_utc": "2026-03-11T00:40:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-03-11T00:44:00Z",
+      "texto": "Cuenta nueva, vida nueva. La de 2019 la di de baja pero el perfil sigue ahi si sabes el alias exacto. Alias viejo: el mismo pajaro, anonimo, con el año pegado atras."
+    },
+    {
+      "id": 211,
+      "autor": "mateamargo_87",
+      "creado_utc": "2026-05-19T18:02:00Z",
+      "zona_dispositivo": "+02:00",
+      "eliminado_utc": "2026-05-19T18:20:00Z",
+      "texto": "Che, alguien sabe si aca el enchufe es tipo C o F? Me olvide el adaptador."
+    },
+    {
+      "id": 4108,
+      "autor": "mama_alerta_uy",
+      "creado_utc": "2026-07-22T13:40:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-07-23T09:15:00Z",
+      "texto": "URGENTE camioneta blanca sin matricula dando vueltas por la escuela, me lo paso una vecina!!! COMPARTAN"
+    },
+    {
+      "id": 4109,
+      "autor": "la_verdad_del_norte",
+      "creado_utc": "2026-07-09T20:05:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-07-09T22:44:00Z",
+      "texto": "Me lo paso una amiga que trabaja adentro. No puedo decir mas. Borro esto en un rato."
+    },
+    {
+      "id": 4110,
+      "autor": "ojoscerrados_uy",
+      "creado_utc": "2026-06-18T03:22:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-06-18T03:29:00Z",
+      "texto": "Bajen todo lo del grupo a la compu. Si nos cierran esto no queda nada. Yo ya tengo mi copia."
+    },
+    {
+      "id": 2211,
+      "autor": "elrusodelquiosco",
+      "creado_utc": "2026-07-18T23:10:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-07-19T08:02:00Z",
+      "texto": "Me calente y puse cosas que no correspondian. Pido disculpas al barrio. Borro el post."
+    },
+    {
+      "id": 5119,
+      "autor": "dj.pirata.fm",
+      "creado_utc": "2026-06-27T16:30:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-06-28T11:00:00Z",
+      "texto": "Aviso dado de baja por moderacion. Motivo registrado: equipamiento sin documentacion."
+    },
+    {
+      "id": 215,
+      "autor": "dj_candombe",
+      "creado_utc": "2026-06-02T04:00:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-06-02T04:03:00Z",
+      "texto": "Ynznqnf rfgn abpur, dhr ab snyyr anqvr."
+    },
+    {
+      "id": 212,
+      "autor": "sofi.tortasfritas",
+      "creado_utc": "2026-07-14T13:00:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-07-14T13:05:00Z",
+      "texto": "Subi mal la receta, iba en el otro post. Perdon."
+    },
+    {
+      "id": 213,
+      "autor": "jp.burgos",
+      "creado_utc": "2026-04-20T02:12:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-04-20T02:41:00Z",
+      "texto": "Al que le haga falta hosting barato: tengo espacio de sobra en maquinas del trabajo que estan al 20 por ciento y nadie mira. Te lo dejo andando por una fraccion de lo que sale afuera. No va factura y no lo hablamos por el grupo, escribime por privado."
+    },
+    {
+      "id": 214,
+      "autor": "jp.burgos",
+      "creado_utc": "2026-04-20T02:44:00Z",
+      "zona_dispositivo": "-03:00",
+      "eliminado_utc": "2026-04-20T02:45:00Z",
+      "texto": "Borre lo de arriba. Fue una pelotudez publicarlo justo esta semana con la que se armo. Si alguien lo alcanzo a leer, olvidenlo."
+    }
+  ],
+
+  "_nota_telemetria": "El identificador de dispositivo se guarda con el ultimo grupo enmascarado. El grupo final solo queda escrito en los archivos que sube el usuario, cuando el sanitizado no corre.",
+
+  "telemetria_publicacion": [
+    { "post_id": 101,  "autor": "charrua_libre",     "creado_utc": "2026-08-02T00:14:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Windows 11", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 102,  "autor": "charrua_libre",     "creado_utc": "2026-07-28T22:03:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Windows 11", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 103,  "autor": "charrua_libre",     "creado_utc": "2026-07-19T20:48:00Z", "zona_dispositivo": "-03:00", "cliente": "movil/1.7", "so": "Android 15", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 104,  "autor": "charrua_libre",     "creado_utc": "2026-07-12T02:55:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Windows 11", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 105,  "autor": "charrua_libre",     "creado_utc": "2026-06-30T11:12:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Windows 11", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 109,  "autor": "charrua_libre",     "creado_utc": "2026-05-19T18:05:00Z", "zona_dispositivo": "+02:00", "cliente": "movil/1.7", "so": "Android 15", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 201,  "autor": "mateamargo_87",     "creado_utc": "2026-08-02T12:30:00Z", "zona_dispositivo": "-03:00", "cliente": "movil/1.7", "so": "Android 15", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 202,  "autor": "mateamargo_87",     "creado_utc": "2026-07-19T20:52:00Z", "zona_dispositivo": "-03:00", "cliente": "movil/1.7", "so": "Android 15", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 203,  "autor": "mateamargo_87",     "creado_utc": "2026-05-19T17:20:00Z", "zona_dispositivo": "+02:00", "cliente": "movil/1.7", "so": "Android 15", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 204,  "autor": "mateamargo_87",     "creado_utc": "2026-04-08T23:00:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Windows 11", "id_dispositivo": "IOS-5ec11-305f-a72e-****" },
+    { "post_id": 501,  "autor": "jp.burgos",         "creado_utc": "2026-05-19T21:47:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Windows 11", "id_dispositivo": "IOS-5ec11-305f-c93d-****" },
+    { "post_id": 502,  "autor": "jp.burgos",         "creado_utc": "2026-07-19T20:50:00Z", "zona_dispositivo": "-03:00", "cliente": "movil/1.7", "so": "iOS 19",     "id_dispositivo": "IOS-5ec11-305f-c93d-****" },
+    { "post_id": 503,  "autor": "jp.burgos",         "creado_utc": "2026-08-01T03:22:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Windows 11", "id_dispositivo": "IOS-5ec11-305f-c93d-****" },
+    { "post_id": 4001, "autor": "ojoscerrados_uy",   "creado_utc": "2026-08-01T04:10:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Linux",      "id_dispositivo": "WEB-31c04-8e1b-77af-****" },
+    { "post_id": 4002, "autor": "investigador_montevideo", "creado_utc": "2026-07-30T15:22:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0", "so": "Windows 10", "id_dispositivo": "WEB-9a72f-4c30-51dd-****" },
+    { "post_id": 4003, "autor": "la_verdad_del_norte","creado_utc": "2026-07-29T19:40:00Z", "zona_dispositivo": "-03:00", "cliente": "movil/1.7", "so": "Android 13", "id_dispositivo": "AND-6b183-9f22-04ce-****" },
+    { "post_id": 4004, "autor": "cielo_raro_uy",     "creado_utc": "2026-07-28T07:05:00Z", "zona_dispositivo": "-03:00", "cliente": "movil/1.7", "so": "Android 14", "id_dispositivo": "AND-24d90-1a6b-b3f8-****" },
+    { "post_id": 2001, "autor": "vecina.malvin.rosa","creado_utc": "2026-07-27T13:15:00Z", "zona_dispositivo": "-03:00", "cliente": "web/3.0",   "so": "Windows 10", "id_dispositivo": "WEB-c7e51-2088-9d14-****" },
+    { "post_id": 2500, "autor": "camionero_ruta5",   "creado_utc": "2026-07-26T09:30:00Z", "zona_dispositivo": "-03:00", "cliente": "movil/1.7", "so": "Android 12", "id_dispositivo": "AND-0f4a7-6d55-2b90-****" },
+    { "post_id": 316,  "autor": "sofi.tortasfritas", "creado_utc": "2026-05-19T23:00:00Z", "zona_dispositivo": "-03:00", "cliente": "movil/1.7", "so": "iOS 19",     "id_dispositivo": "IOS-a8a13-f4a8-e061-****" }
+  ],
+
+  "medios_huerfanos": [
+    {
+      "archivo": "/media/perfiles/p111.jpg",
+      "subido_por": "mateamargo_87",
+      "subido_utc": "2026-08-02T12:29:00Z",
+      "limpieza_de_metadatos": "DESACTIVADA (ver ticket PLT-2291)",
+      "nota": "El pipeline de sanitizado esta caido desde marzo. Los archivos se guardan tal cual los sube el usuario, con el bloque de camara y el identificador de origen."
+    },
+    {
+      "archivo": "/media/cancha_misterio.svg",
+      "subido_por": "charrua_libre",
+      "subido_utc": "2026-07-19T20:47:00Z",
+      "limpieza_de_metadatos": "PARCIAL",
+      "nota": "Se removieron coordenadas a pedido del usuario. El resto del bloque quedo."
+    },
+    {
+      "archivo": "/media/perfiles/p112.jpg",
+      "subido_por": "charrua_libre",
+      "subido_utc": "2020-06-12T01:40:00Z",
+      "limpieza_de_metadatos": "COMPLETA",
+      "nota": "Subido el mismo dia del alta de la cuenta. Archivo sin metadatos: o venia limpio o lo limpiaron antes de subirlo."
+    },
+    {
+      "archivo": "/media/avatar_rambla.svg",
+      "subido_por": "tero_anon_2019",
+      "subido_utc": "2019-04-22T22:02:00Z",
+      "limpieza_de_metadatos": "DESACTIVADA",
+      "nota": "Primera version. Reemplazada en 2026 por una copia que subio otra cuenta."
+    }
+  ],
+
+  "cuentas_archivadas": [
+    {
+      "alias": "tero_anon_2019",
+      "baja_utc": "2019-12-30T02:11:00Z",
+      "motivo": "BAJA_VOLUNTARIA",
+      "contenido_conservado": true,
+      "nota": "Perfil accesible por URL directa con el alias exacto. Excluido del buscador, de las sugerencias y del sitemap."
+    }
+  ]
+}
