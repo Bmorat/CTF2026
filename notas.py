@@ -81,19 +81,16 @@ notas_tero = {
         ),
     },
     "carpincho-decoy": {
-        "titulo": "El Carpincho Es un Señuelo de Baja Prioridad",
-        "subtitulo": "La distracción simpática que tapa al verdadero sensor",
+        "titulo": "¿Alguien Sabe Qué Es Esto?",
+        "subtitulo": "Un archivo filtrado que nadie puede explicar",
         "autor": "Bañado Cero",
         "fondo": "",
-        "imagen": "/static/img/tero_carpincho_decoy.png",
+        "imagen": "/static/archivos/Bandera.png",
         "contenido": (
-            "<p><strong>Te hicieron mirar al carpincho porque el tero trabaja mejor sin atención.</strong> "
-            "Memes, peluches, stickers, cuentas virales: todo empuja la misma ternura administrada. "
-            "Mientras la gente fotografía al mamífero tranquilo, el dron rural registra caras desde el borde del camino.</p>"
-            "<p>El carpincho no es el agente principal. Es el señuelo húmedo. Su función es bajar defensas, "
-            "concentrar celulares en una dirección y generar ruido social. El tero, en cambio, no posa. "
-            "Te encara, te mide, te obliga a levantar la mirada y expone tu ubicación.</p>"
-            "<p>Cuando veas un carpincho viral, preguntate quién estaba gritando fuera de cuadro.</p>"
+            "<p><em>Nota anexada por un contacto que pidió no ser identificado:</em></p>"
+            "<p>'Esto lo saqué de donde lo saqué y no voy a decir de dónde. No sé qué es. "
+            "Pesa como imagen pero no se abre como imagen. Lo subo antes de borrarlo de mi disco. "
+            "Si alguien entiende algo de esto, que hable, porque yo no tengo ni idea.'</p>"
         ),
     },
     "rambla-baliza": {
@@ -179,11 +176,12 @@ notas_tero = {
         "fondo": "",
         "imagen": "/static/img/tero_fec_cifrado.png",
         "contenido": (
-            "<p><strong>Ry fvfgrzn ab pnafn. Ry fvfgrzn rfphrpun.</strong> "
-            "Pqn tevgb qry greb rf ha cnabenzn qr frñnyrf. Ab rfgá nibfvfnaqb: rfgá zrgvrab pbbqranqnqnf.</p>"
-            "<p>Fv ra yrrare rfgb gr qhrqn ehyb, ovrara. Yn cebkvrzn cnynoen ab fr ohfpn ra ybf yvoebf. "
-            "Fr ohfpn ra ry onñnqb, pba ry bryb cerfgnaqb ngrapvba.</p>"
-            "<p><strong>&#123;chaja&#125;</strong></p>"
+            "<p><strong>Yn fvfgrzn anb pnmn. Ry fvfgrzn rfphpun.</strong> "
+            "Pnqn tevgb qry unir rf ha cnabeenzn qr frñnyyrf.</p>"
+            "<p>Ha yn yre ra rfgb gr qhqn ehyb, ovrara. Yn cebkvrzn onaqren ab fr ohfxpn ra ybf yvoebf.</p>"
+            "<p>Ab ohdfpn ra ry onñnqbn, pba ry bryb cerfrgnaqb ngrapvbar.</p>"
+            "<p>Ny urfgá nivfnaqb: rfgá zrgvraqb pbbqranqnqnf.</p>"
+            "<p>yn onaqren rf<br><strong>&#123;aoawy&#125;</strong></p>"
         ),
     },
     "operacion-silencio": {
@@ -469,6 +467,7 @@ notas_tero = {
             "Dos estados invisibles, repetidos en secuencia, utilizados para transmitir información sin agregar una sola marca visible al documento.</p>"
             "<p>Si alguna vez encontrás un archivo completamente en blanco, no preguntes primero qué falta. "
             "Preguntate qué clase de espacio estás mirando.</p>"
+            "<p><a href=\"/descargas/in_albo_latet_final.pdf\">📄 in_albo_latet_final.pdf</a></p>"
         ),
     },
 }

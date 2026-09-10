@@ -1,8 +1,9 @@
 from pydub import AudioSegment
 
 # --- CONFIG ---
-ruta_mp3 = "CTF\ctf_web\entrada.mp3"
-mensaje_morse = "maquiavelo"
+# Requiere ffmpeg disponible en el PATH del sistema.
+ruta_mp3 = "entrada.mp3"
+mensaje_morse = "alerta"
 unidad = 10  # milisegundos por unidad morse (1 decisegundo = 100 ms)
 inicio_morse = 7000  # milisegundos desde donde empieza el efecto
 # ----------------

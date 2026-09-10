@@ -179,6 +179,18 @@ def descarga_senal():
     )
 
 
+@app.route('/descargas/in_albo_latet_final.pdf')
+def descarga_in_albo_latet():
+    # Mismo criterio: se fuerza la descarga tal cual esta en disco.
+    ruta = os.path.join(app.root_path, 'static', 'archivos', 'in_albo_latet_final.pdf')
+    return send_file(
+        ruta,
+        mimetype='application/octet-stream',
+        as_attachment=True,
+        download_name='in_albo_latet_final.pdf',
+    )
+
+
 def correr_flask():
     app.run(host='0.0.0.0', port=5000, debug=False)
 
