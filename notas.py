@@ -318,7 +318,8 @@ notas_tero = {
             "<p>Cada tanto se 'descubre' un tramo de túnel durante una obra vial y se tapa a los pocos días por "
             "'seguridad estructural', cuando la estructura está perfecta. Lo que no puede estar expuesto es la entrada.</p>"
             "<p>No la vamos a nombrar dos veces. Quien necesite entrar, ya sabe leer un archivo hasta el final:</p>"
-            "<p><code>&lt;URL&gt;</code></p>"
+            "<p><code><a href='http://192.168.0.58:8347' target='_blank' rel='noopener'>"
+            "http://192.168.0.58:8347</a></code></p>"
         ),
     },
     "reloj-mundial": {
