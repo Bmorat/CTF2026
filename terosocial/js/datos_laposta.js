@@ -2854,30 +2854,22 @@ window.POSTS_LAPOSTA = [
     encuesta: null
   },
 
-  /* ==========================================================
-     EL CANAL  (ids 4120-4130)
-
-     Cinco ciclos, cada tres días, siempre a la misma hora.
-     Nelson sube una foto a las 03:05; Maxi comenta algo que no
-     tiene nada que ver con la imagen; veinte minutos después
-     Maxi sube la suya. El mensaje va en los metadatos de cada
-     JPG, no acá.
-
-     Nelson tiene coartada para estar despierto y lo dice en su
-     perfil. Maxi entra a trabajar a las siete y también lo dice.
-     Esa es la única grieta del ejercicio.
-     ========================================================== */
+  /* Hilo de n.curbelo.1954 y maxi.zeballos (ids 4120-4129). */
 
   {
     id: 4120,
     autor: "n.curbelo.1954",
-    fecha: "2026-05-19T03:05:00-03:00",
-    texto: "Noche tranquila.",
+    fecha: "2026-08-04T03:05:00-03:00",
+    texto: "Maxi: lo que le dije va en la foto, no acá. Ya sabe por qué. N.",
     imagen: "media/fotos/ciudad_5.jpg",
     grupo: "laposta",
     likes: 4,
     comentarios: [
-      { autor: "maxi.zeballos", texto: "gracias don nelson", fecha: "2026-05-19T03:12:00-03:00" }
+      { autor: "maxi.zeballos", texto: "recibido", fecha: "2026-08-04T03:20:00-03:00" },
+      { autor: "dona_elsa_47", texto: "DON NELSON PERDONE PERO YO NO VEO NADA EN ESA FOTO. SERA MI VISTA QUE YA NO ES LA DE ANTES. DIOS LO BENDIGA", fecha: "2026-08-04T08:40:00-03:00",
+        respuestas: [
+          { autor: "n.curbelo.1954", texto: "No es para mirar, Elsa. Es para leer. N.", fecha: "2026-08-04T09:15:00-03:00" }
+        ] }
     ],
     encuesta: null
   },
@@ -2885,8 +2877,8 @@ window.POSTS_LAPOSTA = [
   {
     id: 4121,
     autor: "maxi.zeballos",
-    fecha: "2026-05-19T03:28:00-03:00",
-    texto: "una que tenia guardada",
+    fecha: "2026-08-04T03:28:00-03:00",
+    texto: "lo tengo don nelson. deme unos dias que lo quiero mirar bien",
     imagen: "media/fotos/rambla_4.jpg",
     grupo: "laposta",
     likes: 2,
@@ -2897,13 +2889,16 @@ window.POSTS_LAPOSTA = [
   {
     id: 4122,
     autor: "n.curbelo.1954",
-    fecha: "2026-05-22T03:07:00-03:00",
-    texto: "Otra.",
+    fecha: "2026-08-05T03:07:00-03:00",
+    texto: "Tómese el tiempo que necesite. Yo hace treinta años que espero. N.",
     imagen: "media/fotos/costa_2.jpg",
     grupo: "laposta",
     likes: 3,
     comentarios: [
-      { autor: "maxi.zeballos", texto: "la otra estaba mejor", fecha: "2026-05-22T03:14:00-03:00" }
+      { autor: "hacker_del_prado", texto: "Che, ¿ustedes dos se entienden? Porque yo los leo y no.", fecha: "2026-08-05T14:20:00-03:00",
+        respuestas: [
+          { autor: "n.curbelo.1954", texto: "Cosas de viejos, muchacho. N.", fecha: "2026-08-05T15:00:00-03:00" }
+        ] }
     ],
     encuesta: null
   },
@@ -2911,26 +2906,31 @@ window.POSTS_LAPOSTA = [
   {
     id: 4123,
     autor: "maxi.zeballos",
-    fecha: "2026-05-22T03:31:00-03:00",
-    texto: "asi quedo",
+    fecha: "2026-08-05T03:31:00-03:00",
+    texto: "no puedo dormir",
     imagen: "media/fotos/ciudad_8.jpg",
     grupo: "laposta",
     likes: 1,
-    comentarios: [],
+    comentarios: [
+      { autor: "ojoscerrados_uy", texto: "Señores, el grupo no es un buzón privado. Para hablar entre dos está la mensajería. Acá se publica lo que le sirve a todos.", fecha: "2026-08-05T11:00:00-03:00",
+        respuestas: [
+          { autor: "n.curbelo.1954", texto: "Tomo nota. N.", fecha: "2026-08-05T11:40:00-03:00" }
+        ] }
+    ],
     encuesta: null
   },
 
   {
     id: 4124,
     autor: "n.curbelo.1954",
-    fecha: "2026-05-25T03:04:00-03:00",
-    texto: "Desde el patio, recién.",
+    fecha: "2026-07-28T21:10:00-03:00",
+    texto: "Bueno. Si hay que hablar en público, hablo en público.\n\nCuarenta años metiendo cable en esta ciudad y les digo una cosa que no me va a discutir nadie: NADIE pone una antena donde no hay nada que escuchar. Nadie.\n\nY fíjense el nombre que le pusieron a esta porquería donde estamos escribiendo. El tero es el bicho que grita cuando alguien entra al campo. AVISA. No le pusieron ese nombre de casualidad. N.",
     imagen: "media/fotos/costa_3.jpg",
     grupo: "laposta",
     likes: 6,
     comentarios: [
-      { autor: "maxi.zeballos", texto: "listo", fecha: "2026-05-25T03:11:00-03:00" },
-      { autor: "dona_elsa_47", texto: "QUE LINDA VISTA DON NELSON. USTED TAMPOCO DUERME. DIOS LO BENDIGA", fecha: "2026-05-25T08:40:00-03:00" }
+      { autor: "maxi.zeballos", texto: "yo nunca vi un tero muerto. y me crie en el campo. bichos muertos ves todo el tiempo, teros no", fecha: "2026-07-28T22:30:00-03:00" },
+      { autor: "dona_elsa_47", texto: "QUE LINDA VISTA DON NELSON. USTED TAMPOCO DUERME. DIOS LO BENDIGA", fecha: "2026-07-29T08:40:00-03:00" }
     ],
     encuesta: null
   },
@@ -2938,8 +2938,8 @@ window.POSTS_LAPOSTA = [
   {
     id: 4125,
     autor: "maxi.zeballos",
-    fecha: "2026-05-25T03:26:00-03:00",
-    texto: "de ayer",
+    fecha: "2026-07-29T19:40:00-03:00",
+    texto: "y a quien avisa? esa es la que no me puedo sacar de la cabeza desde anoche",
     imagen: "media/fotos/rambla_5.jpg",
     grupo: "laposta",
     likes: 2,
@@ -2950,16 +2950,16 @@ window.POSTS_LAPOSTA = [
   {
     id: 4126,
     autor: "n.curbelo.1954",
-    fecha: "2026-05-28T03:06:00-03:00",
-    texto: "Nada nuevo.",
+    fecha: "2026-07-30T20:15:00-03:00",
+    texto: "Esa es la pregunta correcta, Maxi. Le contesto con otra.\n\nEn el 57 los soviéticos mandaron una perra al espacio. Una PERRA. Búsquenlo, está en todos lados, la llamaban Laika.\n\nAhora díganme: los que metieron un animal en un cohete en el 57, ¿ustedes creen que setenta años después no le pueden meter un aparato adentro de un pájaro?\n\nY no me digan que la Unión Soviética se terminó, porque en el 91 no se fue nadie. Cambiaron el cartel de la puerta nada más. N.",
     imagen: "media/fotos/ciudad_6.jpg",
     grupo: "laposta",
     likes: 3,
     comentarios: [
-      { autor: "maxi.zeballos", texto: "👍", fecha: "2026-05-28T03:13:00-03:00" },
-      { autor: "hacker_del_prado", texto: "Che, ¿ustedes dos se entienden? Porque yo los leo y no.", fecha: "2026-05-28T14:20:00-03:00",
+      { autor: "maxi.zeballos", texto: "busque lo de la perra y es tal cual, 1957, esta con foto y todo", fecha: "2026-07-30T21:00:00-03:00" },
+      { autor: "escepticouy", texto: "Don Nelson: que Laika existió no está en discusión, es historia documentada. Que de ahí se siga lo del pájaro, sí. Una cosa no lleva a la otra sola.", fecha: "2026-07-31T14:20:00-03:00",
         respuestas: [
-          { autor: "n.curbelo.1954", texto: "Cosas de viejos, muchacho. N.", fecha: "2026-05-28T15:00:00-03:00" }
+          { autor: "n.curbelo.1954", texto: "No dije que llevara. Dije que se puede. Es distinto y usted lo sabe. N.", fecha: "2026-07-31T15:00:00-03:00" }
         ] }
     ],
     encuesta: null
@@ -2968,8 +2968,8 @@ window.POSTS_LAPOSTA = [
   {
     id: 4127,
     autor: "maxi.zeballos",
-    fecha: "2026-05-28T03:29:00-03:00",
-    texto: "esta",
+    fecha: "2026-07-31T07:20:00-03:00",
+    texto: "lo unico que digo es que nosotros nos pasamos discutiendo si el tero vuela o no vuela y hace 70 años ya mandaban bichos al espacio",
     imagen: "media/fotos/rambla_6.jpg",
     grupo: "laposta",
     likes: 1,
@@ -2980,16 +2980,16 @@ window.POSTS_LAPOSTA = [
   {
     id: 4128,
     autor: "n.curbelo.1954",
-    fecha: "2026-05-31T03:05:00-03:00",
-    texto: "Última por hoy.",
+    fecha: "2026-08-01T18:30:00-03:00",
+    texto: "Agárrense que acá se termina de armar.\n\nBusquen en el mapa San Javier, Río Negro. Un pueblo entero fundado por rusos en 1913, en el medio del campo, donde no mira nadie. Eso está escrito, no lo invento yo.\n\nY les voy a decir algo que no saben: el girasol lo trajeron ellos. Antes de que llegaran acá no había girasol en este país. Manejen por el interior en enero y mírenme esos campos amarillos hasta donde les da la vista. N.",
     imagen: "media/fotos/ciudad_7.jpg",
     grupo: "laposta",
     likes: 5,
     comentarios: [
-      { autor: "maxi.zeballos", texto: "dale, mañana lo veo", fecha: "2026-05-31T03:12:00-03:00" },
-      { autor: "ojoscerrados_uy", texto: "Señores, el grupo no es un buzón privado. Para hablar entre dos está la mensajería. Acá se publica lo que le sirve a todos.", fecha: "2026-05-31T11:00:00-03:00",
+      { autor: "maxi.zeballos", texto: "lo busque en el mapa. esta ahi, existe, 1913, tal cual lo que dijo", fecha: "2026-08-01T19:00:00-03:00" },
+      { autor: "profe_hernandez_hist", texto: "Don Nelson: San Javier y 1913 son correctos, la colonia rusa existió y sigue existiendo. Lo del girasol también, llegó con ellos. Le corrijo una sola cosa: nada de eso es secreto, está en cualquier manual de cuarto año.", fecha: "2026-08-02T09:30:00-03:00",
         respuestas: [
-          { autor: "n.curbelo.1954", texto: "Tomo nota. N.", fecha: "2026-05-31T11:40:00-03:00" }
+          { autor: "n.curbelo.1954", texto: "Profesor, que esté en el manual no quiere decir que alguien lo haya leído. N.", fecha: "2026-08-02T10:15:00-03:00" }
         ] }
     ],
     encuesta: null
@@ -2998,8 +2998,8 @@ window.POSTS_LAPOSTA = [
   {
     id: 4129,
     autor: "maxi.zeballos",
-    fecha: "2026-05-31T03:27:00-03:00",
-    texto: "ultima",
+    fecha: "2026-08-02T08:05:00-03:00",
+    texto: "don nelson yo hasta hace un mes pensaba que usted exageraba",
     imagen: "media/fotos/costa_4.jpg",
     grupo: "laposta",
     likes: 2,
@@ -3007,10 +3007,7 @@ window.POSTS_LAPOSTA = [
     encuesta: null
   },
 
-  /* ---- Relleno de los días de por medio ----
-     El grupo sigue viviendo entre foto y foto del canal. Sin esto, los
-     diez posts del ritual quedan pegados uno atrás del otro y se leen
-     como un bloque; con esto hay que notar el patrón entre el ruido. */
+  /* ---- Actividad de los días de por medio ---- */
 
   {
     id: 4131,
@@ -3146,8 +3143,7 @@ window.POSTS_LAPOSTA = [
     encuesta: null
   },
 
-  /* El admin predicando lo mismo que él no cumple. Va antes del canal
-     para que quien lo lea después entienda la ironía. */
+  /* Post del admin sobre el uso del grupo. */
 
   {
     id: 4130,
@@ -3169,15 +3165,7 @@ window.POSTS_LAPOSTA = [
     encuesta: null
   },
 
-  /* ==========================================================
-     EL HILO DE LA PREGUNTA  (ids 4139-4141)
-
-     Instala el ejercicio 3 mucho antes de que exista: el grupo
-     discute quién escribe el Archivo y quién es Charrúa, y no lo
-     resuelve. Acá quedan planteadas las tres vías que después
-     sirven para resolverlo —el estilo, el dinero y los datos de
-     registro— dichas por gente que no sabe que las está diciendo.
-     ========================================================== */
+  /* Hilo sobre quién escribe el Archivo (ids 4139-4141). */
 
   {
     id: 4139,

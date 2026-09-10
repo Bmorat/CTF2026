@@ -2622,10 +2622,7 @@ window.POSTS_A = [
     encuesta: null
   },
 
-  /* ---------- 2018: la primera publicación de la plataforma ----------
-     Está acá al final por ser la más vieja de toda la red. La cuenta se
-     abandonó el mismo día. El buscador no la encuentra porque corta en
-     agosto de 2025: solo se llega entrando al perfil por su alias. */
+  /* ---------- 2018 ---------- */
 
   {
     id: 1131,
@@ -2639,10 +2636,7 @@ window.POSTS_A = [
     encuesta: null
   },
 
-  /* Va en el muro público a propósito: es la única puerta de entrada al
-     tercer ejercicio que no depende de conocimiento previo. Sin esto, el
-     dato de que existe un robots.txt solo aparece dentro de las carpetas
-     que ese mismo archivo revela, y la pista queda encerrada en sí misma. */
+  /* Va en el muro público. */
 
   {
     id: 1132,
